@@ -127,7 +127,7 @@
         "access_rules": [
           "^$frameInfraRule"
         ],
-        "name": "PF  2",
+        "name": "PF 2",
         "item_count": 1,
         "chest_unopened_img": "images/items/pictureframe.png",
         "chest_opened_img": "images/items/pictureframe_grey.png"
@@ -174,6 +174,41 @@
     ],
     "children": [
       {
+        "name": "Completion",
+        "map_locations": [
+          {
+            "map": "map_snow_worries",
+            "x": 200,
+            "y": 200
+          }
+        ],
+        "access_rules": [],
+        "sections": [
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "All Picture Frames",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "access_rules": [
+              "secondrang,flamerang,frostyrang,zappyrang,swim","secondrang,flamerang,frostyrang,zappyrang,dive"
+            ],
+            "name": "Extra Health",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/life.png",
+            "chest_opened_img": "images/items/life_grey.png"
+          }
+        ]
+      },
+      {
         "name": "Hub 1",
         "access_rules": [
           "secondrang"
@@ -205,7 +240,16 @@
             "item_count": 1,
             "chest_unopened_img": "images/items/pictureframe.png",
             "chest_opened_img": "images/items/pictureframe_grey.png"
-          }
+          },
+          {
+            "visibility_rules": [
+              "scale_sanity"
+            ],
+            "name": "Frog Talisman",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/talisman.png",
+            "chest_opened_img": "images/items/talisman_grey.png"
+          },
         ],
         "map_locations": [
           {

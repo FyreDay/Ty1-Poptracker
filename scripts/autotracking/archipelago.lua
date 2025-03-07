@@ -132,6 +132,18 @@ function onClear(slot_data)
         frameinfra.Active = (slot_data['FramesRequireInfra'])
     end
 
+    if slot_data['CogGating'] then
+        local cogGating = Tracker:FindObjectForCode("cogGating")
+        cogGating.AcquiredCount = (slot_data['CogGating'])
+        print(cogGating.AcquiredCount)
+    end
+
+    if slot_data['TheggGating'] then
+        local theggGating = Tracker:FindObjectForCode("theggGating")
+        theggGating.AcquiredCount = (slot_data['TheggGating'])
+        print(theggGating.AcquiredCount)
+    end
+
     if slot_data['LevelUnlockStyle'] then
         local uls = Tracker:FindObjectForCode("levelunlockstyle")
         uls.CurrentStage = (slot_data['LevelUnlockStyle'])
@@ -141,9 +153,7 @@ function onClear(slot_data)
         
         local int i = 1;
         for _,id in pairs(slot_data['PortalMap']) do
-            print(string.format("id: %s",id))
             local portal = Tracker:FindObjectForCode("portal"..i)
-            print(portal)
             portal.CurrentStage = LEVEL_MAPPING[id][2]
             portal.Active = false
             i = i+1
@@ -154,7 +164,7 @@ function onClear(slot_data)
         portal1.Active = true
        
        PORTAL_MAP = slot_data['PortalMap']
-       print(dump_table(PORTAL_MAP))
+       --print(dump_table(PORTAL_MAP))
     end
     -- reset items
     for _, item_pair in pairs(ITEM_MAPPING) do

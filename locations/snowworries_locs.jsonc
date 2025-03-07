@@ -110,6 +110,59 @@
     ],
     "children": [
       {
+        "name": "Completion",
+        "map_locations": [
+          {
+            "map": "map_snow_worries",
+            "x": 200,
+            "y": 200
+          }
+        ],
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Bilby Completion",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/bilby.png",
+            "chest_opened_img": "images/items/bilby_grey.png"
+        },
+          {
+            "name": "Find 5 Bilbies",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/bilby.png",
+            "chest_opened_img": "images/items/bilby_grey.png"
+          },
+          {
+            "name": "All Golden Cogs",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "All Picture Frames",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "access_rules": [
+              "stopwatch-snowworries"
+            ],
+            "name": "Time Attack Challenge",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/stopwatch.png",
+            "chest_opened_img": "images/items/stopwatch_grey.png"
+          }
+        ]
+      },
+      {
         "name": "Center",
         "map_locations": [
           {

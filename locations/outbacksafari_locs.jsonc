@@ -9,6 +9,46 @@
           }
         ],
         "children": [
+          {
+            "name": "Completion",
+            "map_locations": [
+              {
+                "map": "map_outback_safari",
+                "x": 200,
+                "y": 200
+              }
+            ],
+            "access_rules": [],
+            "sections": [
+              {
+                "name": "Bilby Completion",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/bilby.png",
+                "chest_opened_img": "images/items/bilby_grey.png"
+            },
+              {
+                "name": "Find 5 Bilbies",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/bilby.png",
+                "chest_opened_img": "images/items/bilby_grey.png"
+              },
+              {
+                "name": "All Golden Cogs",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+              },
+              {
+                "access_rules": [
+                  "stopwatch-outbacksafari"
+                ],
+                "name": "Time Attack Challenge",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/stopwatch.png",
+                "chest_opened_img": "images/items/stopwatch_grey.png"
+              }
+            ]
+          },
             {
               "name": "Shazza Loop",
               "map_locations": [

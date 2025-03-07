@@ -174,6 +174,8 @@ function frameInfraRule()
     return AccessibilityLevel.Normal
 end
 
+function 
+
 function ProgressivePortalUpdated(item_obj, LEVEL_MAPPING, PORTAL_MAP)
     --progressivelevel is always 1 less then the unlocked indexes
     local unlockstyle = Tracker:FindObjectForCode("levelunlockstyle")

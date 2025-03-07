@@ -1,0 +1,137 @@
+[
+    {
+        "name": "Cass' Pass",
+        "map_locations": [
+            {
+                "map": "map_cass",
+                "x": 385,
+                "y": 370
+            }
+        ],
+        "sections": [
+            {
+                "visibility_rules": [
+                    "sign_sanity"
+                ],
+                "name": "Signpost 1",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/sign.png",
+                "chest_opened_img": "images/items/sign_grey.png"
+            },
+            {
+                "visibility_rules": [
+                    "life_sanity"
+                ],
+                "name": "Extra Life 1",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/life.png",
+                "chest_opened_img": "images/items/life_grey.png"
+            },
+            {
+                "visibility_rules": [
+                    "life_sanity"
+                ],
+                "name": "Extra Life 2",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/life.png",
+                "chest_opened_img": "images/items/life_grey.png"
+            },
+            {
+                "visibility_rules": [
+                    "life_sanity"
+                ],
+                "name": "Extra Life 3",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/life.png",
+                "chest_opened_img": "images/items/life_grey.png"
+            },
+            {
+                "visibility_rules": [
+                    "life_sanity"
+                ],
+                "name": "Extra Life 4",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/life.png",
+                "chest_opened_img": "images/items/life_grey.png"
+            },
+        ]
+    },
+    {
+        "name": "Cass' Crest",
+        "map_locations": [
+            {
+                "map": "map_crest",
+                "x": 385,
+                "y": 370
+            }
+        ],
+        "sections": [
+            {
+                "visibility_rules": [
+                    "life_sanity"
+                ],
+                "name": "Extra Life 1",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/life.png",
+                "chest_opened_img": "images/items/life_grey.png"
+            },
+            {
+                "visibility_rules": [
+                    "life_sanity"
+                ],
+                "name": "Extra Life 2",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/life.png",
+                "chest_opened_img": "images/items/life_grey.png"
+            },
+            {
+                "visibility_rules": [
+                    "life_sanity"
+                ],
+                "name": "Extra Life 3",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/life.png",
+                "chest_opened_img": "images/items/life_grey.png"
+            },
+            {
+                "visibility_rules": [
+                    "life_sanity"
+                ],
+                "name": "Extra Life 4",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/life.png",
+                "chest_opened_img": "images/items/life_grey.png"
+            },
+            {
+                "visibility_rules": [
+                    "life_sanity"
+                ],
+                "name": "Extra Life 5",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/life.png",
+                "chest_opened_img": "images/items/life_grey.png"
+            },
+        ]
+    },
+    {
+        "name": "Crikey's Cove",
+        "map_locations": [
+            {
+                "map": "map_cove",
+                "x": 385,
+                "y": 370
+            }
+        ],
+        "sections": [
+            {
+                "visibility_rules": [
+                    "life_sanity"
+                ],
+                "name": "Extra Life 1",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/life.png",
+                "chest_opened_img": "images/items/life_grey.png"
+            },
+        ]
+    }
+]

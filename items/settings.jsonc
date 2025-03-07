@@ -42,6 +42,30 @@
         "codes": "frames_require_infra"
     },
     {
+        "name": "CogGating",
+        "type": "consumable",
+        "max_quantity": 15,
+        "increment": 1,
+        "decrement": 1,
+        "initial_quantity": 0,
+        "overlay_background": "#000000",
+        "overlay_font_size": 8,
+        "img": "images/items/goldencog.png",
+        "codes": "cogGating"
+      },
+      {
+        "name": "TheggGating",
+        "type": "consumable",
+        "max_quantity": 24,
+        "increment": 1,
+        "decrement": 1,
+        "initial_quantity": 0,
+        "overlay_background": "#000000",
+        "overlay_font_size": 8,
+        "img": "images/items/thunderegg.png",
+        "codes": "theggGating"
+      },
+    {
         "name": "Frame Sanity",
         "type": "progressive",
         "loop": true,
