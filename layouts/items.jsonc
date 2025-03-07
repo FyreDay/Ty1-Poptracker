@@ -1,0 +1,84 @@
+{
+  // sets layouts for shadred items grids
+  // bigger example: https://github.com/Cyb3RGER/sm_ap_tracker/blob/main/layouts/items.json
+  "shared_item_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "10, 10",
+            "h_alignment": "left",
+            "rows": [
+              [
+                "firethunderegg",
+                "icethunderegg",
+                "airthunderegg",
+                "goldencog",
+                "frogtalisman",
+                "platypustalisman",
+                "cockatootalisman",
+                "dingotalisman",
+                "tigertalisman"
+              ],
+              [
+                "secondrang",
+                "swim",
+                "dive",
+                "aquarang",
+                "flamerang",
+                "frostyrang",
+                "zappyrang",
+                "doomerang"
+              ],
+              [
+                "zoomerang",
+                "multirang",
+                "infrarang",
+                "megarang",
+                "kaboomerang",
+                "chronorang"
+              ],
+              // [
+              //   "portal-twoup",
+              //   "portal-walkinthepark",
+              //   "portal-shiprex",
+              //   "portal-bull'spen",
+              //   "portal-bridgeontheriverty",
+              //   "portal-snowworries",
+              //   "portal-outbacksafari",
+              //   "portal-crikey'scove",
+              //   "portal-lyrelyrepantsonfire",
+              //   "portal-beyondtheblackstump",
+              //   "portal-rexmarksthespot",
+              //   "portal-fluffy'sfjord",
+              //   "portal-cass'pass"
+              // ],
+              [
+                "portal1",
+                "portal2",
+                "portal3",
+                "portal-bull'spen",
+                "portal4",
+                "portal5",
+                "portal6",
+                "portal-crikey'scove",
+                "portal7",
+                "portal8",
+                "portal9",
+                "portal-fluffy'sfjord",
+                "portal-cass'pass"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

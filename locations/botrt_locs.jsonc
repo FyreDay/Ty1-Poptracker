@@ -1,0 +1,533 @@
+[
+  {
+    "name": "BotRT",
+    "map_locations": [
+      {
+        "map": "map_botrt",
+        "x": 2100,
+        "y": 225
+      }
+    ],
+    "sections": [
+      {
+        "visibility_rules": [
+          "sign_sanity"
+        ],
+        "name": "Signpost 2",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/sign.png",
+        "chest_opened_img": "images/items/sign_grey.png"
+      },
+      {
+        "visibility_rules": [
+          "frames_per_level",
+          "frames_on"
+        ],
+        "access_rules": [
+          "^$frameInfraRule"
+        ],
+        "name": "PF 7",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/pictureframe.png",
+        "chest_opened_img": "images/items/pictureframe_grey.png"
+      },
+      {
+        "visibility_rules": [
+          "frames_per_level",
+          "frames_on"
+        ],
+        "access_rules": [
+          "^$frameInfraRule"
+        ],
+        "name": "PF 3",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/pictureframe.png",
+        "chest_opened_img": "images/items/pictureframe_grey.png"
+      },
+      {
+        "visibility_rules": [
+          "frames_per_level",
+          "frames_on"
+        ],
+        "access_rules": [
+          "^$frameInfraRule"
+        ],
+        "name": "PF 4",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/pictureframe.png",
+        "chest_opened_img": "images/items/pictureframe_grey.png"
+      },
+      {
+        "visibility_rules": [
+          "frames_per_level",
+          "frames_on"
+        ],
+        "access_rules": [
+          "^$frameInfraRule"
+        ],
+        "name": "PF 5",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/pictureframe.png",
+        "chest_opened_img": "images/items/pictureframe_grey.png"
+      },
+      {
+        "visibility_rules": [
+          "frames_per_level",
+          "frames_on"
+        ],
+        "access_rules": [
+          "^$frameInfraRule"
+        ],
+        "name": "PF 2",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/pictureframe.png",
+        "chest_opened_img": "images/items/pictureframe_grey.png"
+      },
+      {
+        "visibility_rules": [
+          "frames_per_level",
+          "frames_on"
+        ],
+        "access_rules": [
+          "^$frameInfraRule"
+        ],
+        "name": "PF 11",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/pictureframe.png",
+        "chest_opened_img": "images/items/pictureframe_grey.png"
+      },
+      {
+        "name": "Golden Cog 1",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/goldencog.png",
+        "chest_opened_img": "images/items/goldencog_grey.png"
+      },
+      {
+        "access_rules": [
+          "flamerang"
+        ],
+        "name": "Golden Cog 2",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/goldencog.png",
+        "chest_opened_img": "images/items/goldencog_grey.png"
+      },
+      {
+        "name": "Golden Cog 3",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/goldencog.png",
+        "chest_opened_img": "images/items/goldencog_grey.png"
+      },
+      {
+        "name": "Golden Cog 4",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/goldencog.png",
+        "chest_opened_img": "images/items/goldencog_grey.png"
+      },
+      {
+        "name": "Bilby Boy",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/bilby.png",
+        "chest_opened_img": "images/items/bilby_grey.png"
+      },
+      {
+        "access_rules": [
+          "flamerang"
+        ],
+        "name": "Bilby Mum",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/bilby.png",
+        "chest_opened_img": "images/items/bilby_grey.png"
+      },
+      {
+        "name": "Bilby Dad",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/bilby.png",
+        "chest_opened_img": "images/items/bilby_grey.png"
+      },
+      {
+        "access_rules": [
+          "stopwatch-bridgeontheriverty"
+        ],
+        "name": "Time Attack",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/thunderegg.png",
+        "chest_opened_img": "images/items/thunderegg_grey.png"
+      }
+    ],
+    "children": [
+      {
+        "name": "Main",
+        "access_rules": [
+          "[secondrang]"
+        ],
+        "map_locations": [
+          {
+            "map": "map_botrt",
+            "x": 2200,
+            "y": 2500
+          }
+        ],
+        "sections": [
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "PF 6",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "PF 14",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "PF 10",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "PF 15",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "PF 16",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "name": "Golden Cog 5",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "name": "Golden Cog 7",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "access_rules": [
+              "frostyrang",
+              "swim,aquarang",
+              "dive,aquarang"
+            ],
+            "name": "Golden Cog 8",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "access_rules": [
+              "swim",
+              "dive"
+            ],
+            "name": "Golden Cog 10",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "name": "Bilby Grandma",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/bilby.png",
+            "chest_opened_img": "images/items/bilby_grey.png"
+          },
+          {
+            "name": "Ty Diving",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/thunderegg.png",
+            "chest_opened_img": "images/items/thunderegg_grey.png"
+          },
+          {
+            "name": "Collect 300 Opals",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/thunderegg.png",
+            "chest_opened_img": "images/items/thunderegg_grey.png"
+          }
+        ]
+      },
+      {
+        "name": "Upper",
+        "access_rules": [
+          "[secondrang]"
+        ],
+        "map_locations": [
+          {
+            "map": "map_botrt",
+            "x": 3100,
+            "y": 2700
+          }
+        ],
+        "sections": [
+          {
+            "visibility_rules": [
+              "sign_sanity"
+            ],
+            "name": "Signpost 2",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/sign.png",
+            "chest_opened_img": "images/items/sign_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "PF 1",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "PF 2",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "PF 8",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "PF 9",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "PF 12",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "PF 13",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "PF 17",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "PF 18",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "PF 19",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "frames_per_level",
+              "frames_on"
+            ],
+            "access_rules": [
+              "^$frameInfraRule"
+            ],
+            "name": "PF 20",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/pictureframe.png",
+            "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "name": "Golden Cog 6",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "name": "Golden Cog 9",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "name": "Bilby Girl",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/bilby.png",
+            "chest_opened_img": "images/items/bilby_grey.png"
+          },
+          {
+            "access_rules": [
+              "flamerang"
+            ],
+            "name": "Home, Sweet, Home",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/thunderegg.png",
+            "chest_opened_img": "images/items/thunderegg_grey.png"
+          },
+          {
+            "access_rules": [
+              "flamerang"
+            ],
+            "name": "Heat Dennis' House",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/thunderegg.png",
+            "chest_opened_img": "images/items/thunderegg_grey.png"
+          },
+          {
+            "name": "Tag Team Turkeys",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/thunderegg.png",
+            "chest_opened_img": "images/items/thunderegg_grey.png"
+          },
+          {
+            "name": "Neddy The Bully",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/thunderegg.png",
+            "chest_opened_img": "images/items/thunderegg_grey.png"
+          }
+        ]
+      }
+    ]
+  }
+]
+/*
+
+      {
+        "name": "Second Rang",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/boomerang.png",
+        "chest_opened_img": "images/items/boomerang_grey.png"
+      },
+      
+      {
+        "visibility_rules": [
+              "frames_per_level","frames_on"
+            ],
+            "access_rules": ["^$frameInfraRule"],
+            "name": "PF 2",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/pictureframe.png",
+        "chest_opened_img": "images/items/pictureframe_grey.png"
+      },
+      {
+        "visibility_rules": [
+              "frames_per_level","frames_on"
+            ],
+            "access_rules": ["^$frameInfraRule"],
+            "name": "PF 4",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/pictureframe.png",
+        "chest_opened_img": "images/items/pictureframe_grey.png"
+      },
+      {
+        "visibility_rules": [
+              "frames_per_level","frames_on"
+            ],
+            "access_rules": ["^$frameInfraRule"],
+            "name": "PF 6",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/pictureframe.png",
+        "chest_opened_img": "images/items/pictureframe_grey.png"
+      },
+*/

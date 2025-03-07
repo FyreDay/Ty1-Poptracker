@@ -1,0 +1,402 @@
+[
+    {
+        "name": "Ship Rex",
+        "map_locations": [
+            {
+                "map": "map_ship_rex",
+                "x": 500,
+                "y": 2600
+            }
+        ],
+        "sections": [
+            {
+                "access_rules": [
+                    "stopwatch-shiprex,[swim]",
+                    "stopwatch-shiprex,[dive]"
+                ],
+                "name": "Race Rex",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/thunderegg.png",
+                "chest_opened_img": "images/items/thunderegg_grey.png"
+            },
+            {
+                "name": "Swim",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/boomerang.png",
+                "chest_opened_img": "images/items/boomerang_grey.png"
+            },
+            {
+                "name": "Aquarang",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/aquarang.png",
+                "chest_opened_img": "images/items/boomerang_grey.png"
+            },
+            {
+                "visibility_rules": [
+                    "frames_per_level",
+                    "frames_on"
+                ],
+                "access_rules": [
+                    "^$frameInfraRule"
+                ],
+                "name": "PF 6",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/pictureframe.png",
+                "chest_opened_img": "images/items/pictureframe_grey.png"
+            },
+            {
+                "visibility_rules": [
+                    "frames_per_level",
+                    "frames_on"
+                ],
+                "access_rules": [
+                    "^$frameInfraRule"
+                ],
+                "name": "PF 7",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/pictureframe.png",
+                "chest_opened_img": "images/items/pictureframe_grey.png"
+            },
+            {
+                "visibility_rules": [
+                    "frames_per_level",
+                    "frames_on"
+                ],
+                "access_rules": [
+                    "^$frameInfraRule"
+                ],
+                "name": "PF 8",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/pictureframe.png",
+                "chest_opened_img": "images/items/pictureframe_grey.png"
+            },
+            {
+                "name": "Golden Cog 3",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+            }
+        ],
+        "children": [
+            {
+                "name": "Main",
+                "access_rules": [
+                    "aquarang,swim",
+                    "aquarang,dive",
+                    "frostyrang,[aquarang],[dive],[swim]"
+                ],
+                "map_locations": [
+                    {
+                        "map": "map_ship_rex",
+                        "x": 1800,
+                        "y": 2700
+                    }
+                ],
+                "sections": [
+                    
+                    
+                    {
+                        "name": "Golden Cog 2",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/goldencog.png",
+                        "chest_opened_img": "images/items/goldencog_grey.png"
+                    },
+                    {
+                        "name": "Golden Cog 6",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/goldencog.png",
+                        "chest_opened_img": "images/items/goldencog_grey.png"
+                    },
+                    {
+                        "access_rules": [
+                            "swim",
+                            "dive"
+                        ],
+                        "name": "Golden Cog 7",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/goldencog.png",
+                        "chest_opened_img": "images/items/goldencog_grey.png"
+                    },
+                    
+                    {
+                        "name": "Bilby Dad",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/bilby.png",
+                        "chest_opened_img": "images/items/bilby_grey.png"
+                    },
+                    
+                    {
+                        "name": "Bilby Girl",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/bilby.png",
+                        "chest_opened_img": "images/items/bilby_grey.png"
+                    },
+                    
+                    {
+                        "access_rules": [
+                            "swim",
+                            "dive"
+                        ],
+                        "name": "Aurora's Kids",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/thunderegg.png",
+                        "chest_opened_img": "images/items/thunderegg_grey.png"
+                    },
+                    
+                    {
+                        "visibility_rules": [
+                            "frames_per_level",
+                            "frames_on"
+                        ],
+                        "access_rules": [
+                            "^$frameInfraRule"
+                        ],
+                        "name": "PF 4",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/pictureframe.png",
+                        "chest_opened_img": "images/items/pictureframe_grey.png"
+                    }
+                ],
+                "children": [
+                    {
+                        "name": "Coconut",
+                        "access_rules": [
+                            "[swim]",
+                            "[dive]"
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map_ship_rex",
+                                "x": 1450,
+                                "y": 1350
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "visibility_rules": [
+                                    "life_sanity"
+                                ],
+                                "name": "Extra Life 1",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/life.png",
+                                "chest_opened_img": "images/items/life_grey.png"
+                            },
+                            {
+                                "visibility_rules": [
+                                    "life_sanity"
+                                ],
+                                "name": "Extra Life 2",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/life.png",
+                                "chest_opened_img": "images/items/life_grey.png"
+                            },
+                            {
+                                "name": "Quicksand Coconuts",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/thunderegg.png",
+                                "chest_opened_img": "images/items/thunderegg_grey.png"
+                            },
+                            {
+                                "name": "Bilby Grandma",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/bilby.png",
+                                "chest_opened_img": "images/items/bilby_grey.png"
+                            },
+                            {
+                                "access_rules": [
+                                    "swim",
+                                    "dive"
+                                ],
+                                "name": "Golden Cog 4",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/goldencog.png",
+                                "chest_opened_img": "images/items/goldencog_grey.png"
+                            },
+                            {
+                                "access_rules": [
+                                    "secondrang"
+                                ],
+                                "name": "Golden Cog 5",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/goldencog.png",
+                                "chest_opened_img": "images/items/goldencog_grey.png"
+                            },
+                            {
+                                "visibility_rules": [
+                                    "frames_per_level",
+                                    "frames_on"
+                                ],
+                                "access_rules": [
+                                    "^$frameInfraRule"
+                                ],
+                                "name": "PF 5",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/pictureframe.png",
+                                "chest_opened_img": "images/items/pictureframe_grey.png"
+                            },
+                            {
+                                "visibility_rules": [
+                                    "frames_per_level",
+                                    "frames_on"
+                                ],
+                                "access_rules": [
+                                    "^$frameInfraRule"
+                                ],
+                                "name": "PF 9",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/pictureframe.png",
+                                "chest_opened_img": "images/items/pictureframe_grey.png"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Wreck",
+                        "access_rules": [
+                            "swim",
+                            "dive"
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map_ship_rex",
+                                "x": 900,
+                                "y": 600
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Golden Cog 10",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/goldencog.png",
+                                "chest_opened_img": "images/items/goldencog_grey.png"
+                            },
+                            {
+                                "name": "Bilby Mum",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/bilby.png",
+                                "chest_opened_img": "images/items/bilby_grey.png"
+                            },
+                            {
+                                "access_rules": [
+                                    "aquarang"
+                                ],
+                                "name": "Ship Wreck",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/thunderegg.png",
+                                "chest_opened_img": "images/items/thunderegg_grey.png"
+                            },
+                            {
+                                "name": "Nest Egg",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/thunderegg.png",
+                                "chest_opened_img": "images/items/thunderegg_grey.png"
+                            },
+                            {
+                                "visibility_rules": [
+                                    "frames_per_level",
+                                    "frames_on"
+                                ],
+                                "access_rules": [
+                                    "^$frameInfraRule"
+                                ],
+                                "name": "PF 2",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/pictureframe.png",
+                                "chest_opened_img": "images/items/pictureframe_grey.png"
+                            },
+                            {
+                                "visibility_rules": [
+                                    "frames_per_level",
+                                    "frames_on"
+                                ],
+                                "access_rules": [
+                                    "^$frameInfraRule"
+                                ],
+                                "name": "PF 3",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/pictureframe.png",
+                                "chest_opened_img": "images/items/pictureframe_grey.png"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Spire",
+                        "map_locations": [
+                            {
+                                "map": "map_ship_rex",
+                                "x": 3250,
+                                "y": 2050
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "visibility_rules": [
+                                    "life_sanity"
+                                ],
+                                "name": "Extra Life 3",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/life.png",
+                                "chest_opened_img": "images/items/life_grey.png"
+                            },
+                            {
+                                "access_rules": [
+                                    "aquarang,swim",
+                                    "aquarang,dive"
+                                ],
+                                "name": "Golden Cog 1",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/goldencog.png",
+                                "chest_opened_img": "images/items/goldencog_grey.png"
+                            },
+                            {
+                                "name": "Golden Cog 8",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/goldencog.png",
+                                "chest_opened_img": "images/items/goldencog_grey.png"
+                            },
+                            {
+                                "access_rules": [
+                                    "[secondrang]"
+                                ],
+                                "name": "Golden Cog 9",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/goldencog.png",
+                                "chest_opened_img": "images/items/goldencog_grey.png"
+                            },
+                            {
+                                "name": "Bilby Boy",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/bilby.png",
+                                "chest_opened_img": "images/items/bilby_grey.png"
+                            },
+                            {
+                                "name": "Where's Elle?",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/thunderegg.png",
+                                "chest_opened_img": "images/items/thunderegg_grey.png"
+                            },
+                            {
+                                "name": "Collect 300 Opals",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/thunderegg.png",
+                                "chest_opened_img": "images/items/thunderegg_grey.png"
+                            },
+                            {
+                                "access_rules": [
+                                    "^$frameInfraRule"
+                                ],
+                                "visibility_rules": [
+                                    "frames_per_level",
+                                    "frames_on"
+                                ],
+                                "name": "PF 1",
+                                "item_count": 1,
+                                "chest_unopened_img": "images/items/pictureframe.png",
+                                "chest_opened_img": "images/items/pictureframe_grey.png"
+                            },
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,28 @@
+{
+    "settings_grid": {
+        "type": "container",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "itemgrid",
+                "item_size": 60,
+                "item_margin": "2, 2",
+                "h_alignment": "center",
+                "rows": [
+                    [
+                        "scale_sanity",
+                        "frames",
+                        "deathlink",
+                        "frames_require_infra",
+                        "progressive_level_setting",
+                        "progressive_rang_setting",
+                        "levelunlockstyle",
+                        "sign_sanity",
+                        "life_sanity"
+                    ]
+                ]
+            }
+        ]
+    }
+}

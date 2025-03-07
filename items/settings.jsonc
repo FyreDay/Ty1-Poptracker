@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Progressive Rangs",
+        "type": "toggle",
+        "img": "images/items/boomerang.png",
+        "codes": "progressive_rang_setting"
+    },
+    {
+        "name": "Progressive Levels",
+        "type": "toggle",
+        "img": "images/items/portal.png",
+        "codes": "progressive_level_setting"
+    },
+    {
+        "name": "Scale Sanity",
+        "type": "toggle",
+        "img": "images/settings/scale_sanity.png",
+        "codes": "scale_sanity"
+    },
+    {
+        "name": "life Sanity",
+        "type": "toggle",
+        "img": "images/items/life.png",
+        "codes": "life_sanity"
+    },
+    {
+        "name": "Sign Sanity",
+        "type": "toggle",
+        "img": "images/items/sign.png",
+        "codes": "sign_sanity"
+    },
+    {
+        "name": "Deathlink",
+        "type": "toggle",
+        "img": "images/settings/deathlink.png",
+        "codes": "deathlink"
+    },
+    {
+        "name": "Frames Require Infra",
+        "type": "toggle",
+        "img": "images/settings/frame_require_infra.png",
+        "codes": "frames_require_infra"
+    },
+    {
+        "name": "Frame Sanity",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            
+            {
+                "img": "images/settings/frame_sanity.png",
+                "name": "Frame Sanity Enabled",
+                "codes": "frames,frames_on",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/settings/frame_per_level.png",
+                "name": "All Frames, One Check",
+                "codes": "frames,frames_per_level",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/settings/frame_off.png",
+                "name": "Frame Sanity Disabled",
+                "codes": "frames,frames_off",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Level Unlock Style",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Vanilla Levels",
+                "codes": "levelunlockstyle,option_vanilla",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "All levels checked",
+                "codes": "levelunlockstyle,option_checks",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Non-Boss levels are checks",
+                "codes": "levelunlockstyle,option_checks_no_bosses",
+                "inherit_codes": false
+            }
+        ]
+    }
+]

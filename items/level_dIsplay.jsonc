@@ -1,0 +1,605 @@
+[
+    {
+        "name": "Level 1",
+        "type": "progressive_toggle",
+        "loop": true,
+        "allow_disabled": false,
+        "codes": "portal1",
+        "initial_stage_idx": 0,
+        "stages": [
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Two Up",
+                "codes": "portal_two_up",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Walk in The Park",
+                "codes": "portal_witp",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Ship Rex",
+                "codes": "portal_shiprex",
+                "inherit_codes": false
+            },
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Bridge on the River Ty",
+                "codes": "portal_botrt",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Snow Worries",
+                "codes": "portal_snowworries",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Outback Safari",
+                "codes": "portal_outbacksafari",
+                "inherit_codes": false
+            },
+
+            {
+                "img": "images/items/portal.png",
+                "name": "Lyre,lyre Pants on Fire",
+                "codes": "portal_llpof",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Beyond the Black Stump",
+                "codes": "portal_btbs",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Rex Marks the Spot",
+                "codes": "portal_rmts",
+                "inherit_codes": false
+            },
+        ]
+    },
+    {
+        "name": "Level 2",
+        "type": "progressive_toggle",
+        "loop": true,
+        "allow_disabled": false,
+        "codes": "portal2",
+        "initial_stage_idx": 1,
+        "stages": [
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Two Up",
+                "codes": "portal_two_up",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Walk in The Park",
+                "codes": "portal_witp",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Ship Rex",
+                "codes": "portal_shiprex",
+                "inherit_codes": false
+            },
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Bridge on the River Ty",
+                "codes": "portal_botrt",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Snow Worries",
+                "codes": "portal_snowworries",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Outback Safari",
+                "codes": "portal_outbacksafari",
+                "inherit_codes": false
+            },
+
+            {
+                "img": "images/items/portal.png",
+                "name": "Lyre,lyre Pants on Fire",
+                "codes": "portal_llpof",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Beyond the Black Stump",
+                "codes": "portal_btbs",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Rex Marks the Spot",
+                "codes": "portal_rmts",
+                "inherit_codes": false
+            },
+        ]
+    },
+    {
+        "name": "Level 3",
+        "type": "progressive_toggle",
+        "loop": true,
+        "allow_disabled": false,
+        "codes": "portal3",
+        "initial_stage_idx": 2,
+        "stages": [
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Two Up",
+                "codes": "portal_two_up",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Walk in The Park",
+                "codes": "portal_witp",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Ship Rex",
+                "codes": "portal_shiprex",
+                "inherit_codes": false
+            },
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Bridge on the River Ty",
+                "codes": "portal_botrt",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Snow Worries",
+                "codes": "portal_snowworries",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Outback Safari",
+                "codes": "portal_outbacksafari",
+                "inherit_codes": false
+            },
+
+            {
+                "img": "images/items/portal.png",
+                "name": "Lyre,lyre Pants on Fire",
+                "codes": "portal_llpof",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Beyond the Black Stump",
+                "codes": "portal_btbs",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Rex Marks the Spot",
+                "codes": "portal_rmts",
+                "inherit_codes": false
+            },
+        ]
+    },
+    {
+        "name": "Level 4",
+        "type": "progressive_toggle",
+        "loop": true,
+        "allow_disabled": false,
+        "codes": "portal4",
+        "initial_stage_idx": 3,
+        "stages": [
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Two Up",
+                "codes": "portal_two_up",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Walk in The Park",
+                "codes": "portal_witp",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Ship Rex",
+                "codes": "portal_shiprex",
+                "inherit_codes": false
+            },
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Bridge on the River Ty",
+                "codes": "portal_botrt",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Snow Worries",
+                "codes": "portal_snowworries",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Outback Safari",
+                "codes": "portal_outbacksafari",
+                "inherit_codes": false
+            },
+
+            {
+                "img": "images/items/portal.png",
+                "name": "Lyre,lyre Pants on Fire",
+                "codes": "portal_llpof",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Beyond the Black Stump",
+                "codes": "portal_btbs",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Rex Marks the Spot",
+                "codes": "portal_rmts",
+                "inherit_codes": false
+            },
+        ]
+    },
+    {
+        "name": "Level 5",
+        "type": "progressive_toggle",
+        "loop": true,
+        "allow_disabled": false,
+        "codes": "portal5",
+        "initial_stage_idx": 4,
+        "stages": [
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Two Up",
+                "codes": "portal_two_up",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Walk in The Park",
+                "codes": "portal_witp",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Ship Rex",
+                "codes": "portal_shiprex",
+                "inherit_codes": false
+            },
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Bridge on the River Ty",
+                "codes": "portal_botrt",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Snow Worries",
+                "codes": "portal_snowworries",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Outback Safari",
+                "codes": "portal_outbacksafari",
+                "inherit_codes": false
+            },
+
+            {
+                "img": "images/items/portal.png",
+                "name": "Lyre,lyre Pants on Fire",
+                "codes": "portal_llpof",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Beyond the Black Stump",
+                "codes": "portal_btbs",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Rex Marks the Spot",
+                "codes": "portal_rmts",
+                "inherit_codes": false
+            },
+        ]
+    },
+    {
+        "name": "Level 6",
+        "type": "progressive_toggle",
+        "loop": true,
+        "allow_disabled": false,
+        "codes": "portal6",
+        "initial_stage_idx": 5,
+        "stages": [
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Two Up",
+                "codes": "portal_two_up",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Walk in The Park",
+                "codes": "portal_witp",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Ship Rex",
+                "codes": "portal_shiprex",
+                "inherit_codes": false
+            },
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Bridge on the River Ty",
+                "codes": "portal_botrt",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Snow Worries",
+                "codes": "portal_snowworries",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Outback Safari",
+                "codes": "portal_outbacksafari",
+                "inherit_codes": false
+            },
+
+            {
+                "img": "images/items/portal.png",
+                "name": "Lyre,lyre Pants on Fire",
+                "codes": "portal_llpof",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Beyond the Black Stump",
+                "codes": "portal_btbs",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Rex Marks the Spot",
+                "codes": "portal_rmts",
+                "inherit_codes": false
+            },
+        ]
+    },
+    {
+        "name": "Level 7",
+        "type": "progressive_toggle",
+        "loop": true,
+        "allow_disabled": false,
+        "codes": "portal7",
+        "initial_stage_idx": 6,
+        "stages": [
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Two Up",
+                "codes": "portal_two_up",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Walk in The Park",
+                "codes": "portal_witp",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Ship Rex",
+                "codes": "portal_shiprex",
+                "inherit_codes": false
+            },
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Bridge on the River Ty",
+                "codes": "portal_botrt",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Snow Worries",
+                "codes": "portal_snowworries",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Outback Safari",
+                "codes": "portal_outbacksafari",
+                "inherit_codes": false
+            },
+
+            {
+                "img": "images/items/portal.png",
+                "name": "Lyre,lyre Pants on Fire",
+                "codes": "portal_llpof",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Beyond the Black Stump",
+                "codes": "portal_btbs",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Rex Marks the Spot",
+                "codes": "portal_rmts",
+                "inherit_codes": false
+            },
+        ]
+    },
+    {
+        "name": "Level 8",
+        "type": "progressive_toggle",
+        "loop": true,
+        "allow_disabled": false,
+        "codes": "portal8",
+        "initial_stage_idx": 7,
+        "stages": [
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Two Up",
+                "codes": "portal_two_up",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Walk in The Park",
+                "codes": "portal_witp",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Ship Rex",
+                "codes": "portal_shiprex",
+                "inherit_codes": false
+            },
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Bridge on the River Ty",
+                "codes": "portal_botrt",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Snow Worries",
+                "codes": "portal_snowworries",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Outback Safari",
+                "codes": "portal_outbacksafari",
+                "inherit_codes": false
+            },
+
+            {
+                "img": "images/items/portal.png",
+                "name": "Lyre,lyre Pants on Fire",
+                "codes": "portal_llpof",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Beyond the Black Stump",
+                "codes": "portal_btbs",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Rex Marks the Spot",
+                "codes": "portal_rmts",
+                "inherit_codes": false
+            },
+        ]
+    },
+    {
+        "name": "Level 9",
+        "type": "progressive_toggle",
+        "loop": true,
+        "allow_disabled": false,
+        "codes": "portal9",
+        "initial_stage_idx": 8,
+        "stages": [
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Two Up",
+                "codes": "portal_two_up",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Walk in The Park",
+                "codes": "portal_witp",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Ship Rex",
+                "codes": "portal_shiprex",
+                "inherit_codes": false
+            },
+            
+            {
+                "img": "images/items/portal.png",
+                "name": "Bridge on the River Ty",
+                "codes": "portal_botrt",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Snow Worries",
+                "codes": "portal_snowworries",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Outback Safari",
+                "codes": "portal_outbacksafari",
+                "inherit_codes": false
+            },
+
+            {
+                "img": "images/items/portal.png",
+                "name": "Lyre,lyre Pants on Fire",
+                "codes": "portal_llpof",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Beyond the Black Stump",
+                "codes": "portal_btbs",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/portal.png",
+                "name": "Rex Marks the Spot",
+                "codes": "portal_rmts",
+                "inherit_codes": false
+            },
+        ]
+    },
+]

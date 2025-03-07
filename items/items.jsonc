@@ -1,0 +1,476 @@
+
+ //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#items
+[
+  {
+    "name": "Fire thunder egg",
+    "type": "consumable",
+    "max_quantity": 30,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/firethunderegg.png",
+    "codes": "firethunderegg"
+  },
+  {
+    "name": "Ice Thunder Egg",
+    "type": "consumable",
+    "max_quantity": 30,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/icethunderegg.png",
+    "codes": "icethunderegg"
+  },
+  {
+    "name": "Air Thunder Egg",
+    "type": "consumable",
+    "max_quantity": 30,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/airthunderegg.png",
+    "codes": "airthunderegg"
+  },
+  {
+    "name": "Golden Cog",
+    "type": "consumable",
+    "max_quantity": 90,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/goldencog.png",
+    "codes": "goldencog"
+  },
+  {
+    "name": "Progressive Rang",
+    "type": "consumable",
+    "max_quantity": 12,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/boomerang.png",
+    "codes": "progressiverang"
+  },
+  {
+    "name": "Swim",
+    "type": "toggle",
+    "img": "images/items/boomerang.png",
+    "codes": "swim"
+  },
+  {
+    "name": "Dive",
+    "type": "toggle",
+    "img": "images/items/boomerang.png",
+    "codes": "dive"
+  },
+  {
+    "name": "Second Rang",
+    "type": "toggle",
+    "img": "images/items/boomerang.png",
+    "codes": "secondrang"
+  },
+  {
+    "name": "Extra Health",
+    "type": "toggle",
+    "img": "images/items/extrahealth.png",
+    "codes": "extrahealth"
+  },
+  {
+    "name": "Boomerang",
+    "type": "toggle",
+    "img": "images/items/boomerang.png",
+    "codes": "boomerang"
+  },
+  {
+    "name": "Flamerang",
+    "type": "toggle",
+    "img": "images/items/flamerang.png",
+    "codes": "flamerang"
+  },
+  {
+    "name": "Frostyrang",
+    "type": "toggle",
+    "img": "images/items/frostyrang.png",
+    "codes": "frostyrang"
+  },
+  {
+    "name": "Zappyrang",
+    "type": "toggle",
+    "img": "images/items/zappyrang.png",
+    "codes": "zappyrang"
+  },
+  {
+    "name": "Aquarang",
+    "type": "toggle",
+    "img": "images/items/aquarang.png",
+    "codes": "aquarang"
+  },
+  {
+    "name": "Zoomerang",
+    "type": "toggle",
+    "img": "images/items/zoomerang.png",
+    "codes": "zoomerang"
+  },
+  {
+    "name": "Multirang",
+    "type": "toggle",
+    "img": "images/items/multirang.png",
+    "codes": "multirang"
+  },
+  {
+    "name": "Infrarang",
+    "type": "toggle",
+    "img": "images/items/infrarang.png",
+    "codes": "infrarang"
+  },
+  {
+    "name": "Megarang",
+    "type": "toggle",
+    "img": "images/items/megarang.png",
+    "codes": "megarang"
+  },
+  {
+    "name": "Kaboomarang",
+    "type": "toggle",
+    "img": "images/items/kaboomerang.png",
+    "codes": "kaboomerang"
+  },
+  {
+    "name": "Chronorang",
+    "type": "toggle",
+    "img": "images/items/chronorang.png",
+    "codes": "chronorang"
+  },
+  {
+    "name": "Doomerang",
+    "type": "toggle",
+    "img": "images/items/doomerang.png",
+    "codes": "doomerang"
+  },
+  {
+    "name": "bilby-twoup",
+    "type": "consumable",
+    "max_quantity": 5,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/bilby.png",
+    "codes": "bilby-twoup"
+  },
+  {
+    "name": "bilby-walkinthepark",
+    "type": "consumable",
+    "max_quantity": 5,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/bilby.png",
+    "codes": "bilby-walkinthepark"
+  },
+  {
+    "name": "bilby-shiprex",
+    "type": "consumable",
+    "max_quantity": 5,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/bilby.png",
+    "codes": "bilby-shiprex"
+  },
+  {
+    "name": "bilby-bridgeontheriverty",
+    "type": "consumable",
+    "max_quantity": 5,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/bilby.png",
+    "codes": "bilby-bridgeontheriverty"
+  },
+  {
+    "name": "bilby-snowworries",
+    "type": "consumable",
+    "max_quantity": 5,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/bilby.png",
+    "codes": "bilby-snowworries"
+  },
+  {
+    "name": "bilby-outbacksafari",
+    "type": "consumable",
+    "max_quantity": 5,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/bilby.png",
+    "codes": "bilby-outbacksafari"
+  },
+  {
+    "name": "bilby-lyre,lyrepantsonfire",
+    "type": "consumable",
+    "max_quantity": 5,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/bilby.png",
+    "codes": "bilby-lyre,lyrepantsonfire"
+  },
+  {
+    "name": "bilby-beyondtheblackstump",
+    "type": "consumable",
+    "max_quantity": 5,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/bilby.png",
+    "codes": "bilby-beyondtheblackstump"
+  },
+  {
+    "name": "bilby-rexmarksthespot",
+    "type": "consumable",
+    "max_quantity": 5,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/bilby.png",
+    "codes": "bilby-rexmarksthespot"
+  },
+  {
+    "name": "progressive level",
+    "type": "consumable",
+    "max_quantity": 12,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/portal.png",
+    "codes": "progressivelevel"
+  },
+  {
+    "name": "portal-twoup",
+    "type": "toggle",
+    "img": "images/items/portal.png",
+    "codes": "portal-twoup"
+  },
+  {
+    "name": "portal-walkinthepark",
+    "type": "toggle",
+    "img": "images/items/portal.png",
+    "codes": "portal-walkinthepark"
+  },
+  {
+    "name": "portal-shiprex",
+    "type": "toggle",
+    "img": "images/items/portal.png",
+    "codes": "portal-shiprex"
+  },
+  {
+    "name": "portal-bull'spen",
+    "type": "toggle",
+    "img": "images/items/portal.png",
+    "codes": "portal-bull'spen"
+  },
+  {
+    "name": "portal-bridgeontheriverty",
+    "type": "toggle",
+    "img": "images/items/portal.png",
+    "codes": "portal-bridgeontheriverty"
+  },
+  {
+    "name": "portal-snowworries",
+    "type": "toggle",
+    "img": "images/items/portal.png",
+    "codes": "portal-snowworries"
+  },
+  {
+    "name": "portal-outbacksafari",
+    "type": "toggle",
+    "img": "images/items/portal.png",
+    "codes": "portal-outbacksafari"
+  },
+  {
+    "name": "portal-crikey'scove",
+    "type": "toggle",
+    "img": "images/items/portal.png",
+    "codes": "portal-crikey'scove"
+  },
+  {
+    "name": "portal-lyre,lyrepantsonfire",
+    "type": "toggle",
+    "img": "images/items/portal.png",
+    "codes": "portal-lyrelyrepantsonfire"
+  },
+  {
+    "name": "portal-beyondtheblackstump",
+    "type": "toggle",
+    "img": "images/items/portal.png",
+    "codes": "portal-beyondtheblackstump"
+  },
+  {
+    "name": "portal-rexmarksthespot",
+    "type": "toggle",
+    "img": "images/items/portal.png",
+    "codes": "portal-rexmarksthespot"
+  },
+  {
+    "name": "portal-fluffy'sfjord",
+    "type": "toggle",
+    "img": "images/items/portal.png",
+    "codes": "portal-fluffy'sfjord"
+  },
+  {
+    "name": "portal-cass'pass",
+    "type": "toggle",
+    "img": "images/items/portal.png",
+    "codes": "portal-cass'pass"
+  },
+  {
+    "name": "stopwatch-twoup",
+    "type": "toggle",
+    "img": "images/items/stopwatch.png",
+    "codes": "stopwatch-twoup"
+  },
+  {
+    "name": "stopwatch-walkinthepark",
+    "type": "toggle",
+    "img": "images/items/stopwatch.png",
+    "codes": "stopwatch-walkinthepark"
+  },
+  {
+    "name": "stopwatch-shiprex",
+    "type": "toggle",
+    "img": "images/items/stopwatch.png",
+    "codes": "stopwatch-shiprex"
+  },
+  {
+    "name": "stopwatch-bridgeontheriverty",
+    "type": "toggle",
+    "img": "images/items/stopwatch.png",
+    "codes": "stopwatch-bridgeontheriverty"
+  },
+  {
+    "name": "stopwatch-snowworries",
+    "type": "toggle",
+    "img": "images/items/stopwatch.png",
+    "codes": "stopwatch-snowworries"
+  },
+  {
+    "name": "stopwatch-outbacksafari",
+    "type": "toggle",
+    "img": "images/items/stopwatch.png",
+    "codes": "stopwatch-outbacksafari"
+  },
+  {
+    "name": "stopwatch-lyre,lyrepantsonfire",
+    "type": "toggle",
+    "img": "images/items/stopwatch.png",
+    "codes": "stopwatch-lyre,lyrepantsonfire"
+  },
+  {
+    "name": "stopwatch-beyondtheblackstump",
+    "type": "toggle",
+    "img": "images/items/stopwatch.png",
+    "codes": "stopwatch-beyondtheblackstump"
+  },
+  {
+    "name": "stopwatch-rexmarksthespot",
+    "type": "toggle",
+    "img": "images/items/stopwatch.png",
+    "codes": "stopwatch-rexmarksthespot"
+  },
+  {
+    "name": "frogtalisman",
+    "type": "toggle",
+    "img": "images/items/talisman.png",
+    "codes": "frogtalisman"
+  },
+  {
+    "name": "platypustalisman",
+    "type": "toggle",
+    "img": "images/items/talisman.png",
+    "codes": "platypustalisman"
+  },
+  {
+    "name": "cockatootalisman",
+    "type": "toggle",
+    "img": "images/items/talisman.png",
+    "codes": "cockatootalisman"
+  },
+  {
+    "name": "dingotalisman",
+    "type": "toggle",
+    "img": "images/items/talisman.png",
+    "codes": "dingotalisman"
+  },
+  {
+    "name": "tigertalisman",
+    "type": "toggle",
+    "img": "images/items/talisman.png",
+    "codes": "tigertalisman"
+  },
+  {
+    "name": "Picture Frame",
+    "type": "consumable",
+    "max_quantity": 127,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "overlay_font_size": 8,
+    "img": "images/items/pictureframe.png",
+    "codes": "pictureframe"
+  },
+  {
+    "name": "extralife",
+    "type": "consumable",
+    "max_quantity": 99,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "img": "images/items/extralife.png",
+    "codes": "extralife"
+  },
+  {
+    "name": "opalmagnet",
+    "type": "consumable",
+    "max_quantity": 99,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "img": "images/items/opalmagnet.png",
+    "codes": "opalmagnet"
+  }
+]

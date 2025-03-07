@@ -1,0 +1,132 @@
+[
+    {
+        "name": "generic",
+        "map_locations": [
+          {
+            "map": "map_generic",
+            "x": 385,
+            "y": 370
+          }
+        ],
+        "sections": [
+            {
+                "name": "Golden Cog 1",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+              },
+              {
+                "name": "Golden Cog 2",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+              },
+              {
+                "name": "Golden Cog 3",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+              },
+              {
+                "name": "Golden Cog 4",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+              },
+              {
+                "name": "Golden Cog 5",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+              },
+              {
+                "name": "Golden Cog 6",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+              },
+              {
+                "name": "Golden Cog 7",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+              },
+              {
+                "name": "Golden Cog 8",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+              },
+              {
+                "name": "Golden Cog 9",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+              },
+              {
+                "name": "Golden Cog 10",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+              },
+              {
+                "name": "Bilby Dad",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/bilby.png",
+                "chest_opened_img": "images/items/bilby_grey.png"
+              },
+              
+              {
+                "name": "Bilby Boy",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/bilby.png",
+                "chest_opened_img": "images/items/bilby_grey.png"
+              },
+              {
+                "name": "Bilby Girl",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/bilby.png",
+                "chest_opened_img": "images/items/bilby_grey.png"
+              },
+              {
+                "name": "Bilby Mum",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/bilby.png",
+                "chest_opened_img": "images/items/bilby_grey.png"
+              },
+              
+              {
+                "name": "Bilby Grandma",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/bilby.png",
+                "chest_opened_img": "images/items/bilby_grey.png"
+              },
+              {
+                "visibility_rules": [
+                      "frames_per_level","frames_on"
+                ],
+                "access_rules": ["^$frameInfraRule"],
+                "name": "PF 20",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/pictureframe.png",
+                "chest_opened_img": "images/items/pictureframe_grey.png"
+              }
+        ],
+        "children": [
+            {
+              "name": "sec1",
+              "map_locations": [
+                {
+                    "map": "map_generic",
+                    "x": 385,
+                    "y": 370
+                }
+                ],
+                "access_rules": [
+                ],
+                "sections": [
+                ]
+            }
+        ]
+    }
+]

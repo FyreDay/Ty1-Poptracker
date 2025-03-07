@@ -1,0 +1,291 @@
+[
+    {
+        "name": "WitP",
+        "map_locations": [
+            {
+                "map": "map_witp",
+                "x": 700,
+                "y": 1700
+            }
+        ],
+        "sections": [
+            {
+                "visibility_rules": [
+                    "sign_sanity"
+                ],
+                "name": "Signpost 1",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/sign.png",
+                "chest_opened_img": "images/items/sign_grey.png"
+            },
+            {
+                "visibility_rules": [
+                    "sign_sanity"
+                ],
+                "name": "Signpost 2",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/sign.png",
+                "chest_opened_img": "images/items/sign_grey.png"
+            },
+            {
+                "visibility_rules": [
+                    "sign_sanity"
+                ],
+                "name": "Signpost 3",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/sign.png",
+                "chest_opened_img": "images/items/sign_grey.png"
+            },
+            {
+                "access_rules": [
+                    "stopwatch-walkinthepark"
+                ],
+                "name": "Wombat Race",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/thunderegg.png",
+                "chest_opened_img": "images/items/thunderegg_grey.png"
+            },
+            {
+                "name": "Golden Cog 1",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+            },
+            {
+                "name": "Golden Cog 2",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+            },
+            {
+                "name": "Golden Cog 3",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+            },
+            {
+                "name": "Golden Cog 4",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+            },
+            {
+                "name": "Golden Cog 7",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+            },
+            {
+                "name": "Golden Cog 10",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/goldencog.png",
+                "chest_opened_img": "images/items/goldencog_grey.png"
+            },
+            {
+                "name": "Bilby Dad",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/bilby.png",
+                "chest_opened_img": "images/items/bilby_grey.png"
+            },
+            {
+                "name": "Bilby Boy",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/bilby.png",
+                "chest_opened_img": "images/items/bilby_grey.png"
+            },
+            {
+                "name": "Bilby Girl",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/bilby.png",
+                "chest_opened_img": "images/items/bilby_grey.png"
+            },
+            {
+                "visibility_rules": [
+                    "frames_per_level",
+                    "frames_on"
+                ],
+                "access_rules": [
+                    "^$frameInfraRule"
+                ],
+                "name": "PF 3",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/pictureframe.png",
+                "chest_opened_img": "images/items/pictureframe_grey.png"
+            }
+        ],
+        "children": [
+            {
+                "name": "Vally",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "visibility_rules": [
+                            "life_sanity"
+                        ],
+                        "name": "Extra Life 1",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/life.png",
+                        "chest_opened_img": "images/items/life_grey.png"
+                    },
+                    {
+                        "name": "Golden Cog 5",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/goldencog.png",
+                        "chest_opened_img": "images/items/goldencog_grey.png"
+                    },
+                    {
+                        "name": "Log Climb",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/thunderegg.png",
+                        "chest_opened_img": "images/items/thunderegg_grey.png"
+                    },
+                    {
+                        "name": "Drive Me Batty",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/thunderegg.png",
+                        "chest_opened_img": "images/items/thunderegg_grey.png"
+                    },
+                    {
+                        "visibility_rules": [
+                            "frames_per_level",
+                            "frames_on"
+                        ],
+                        "access_rules": [
+                            "^$frameInfraRule"
+                        ],
+                        "name": "PF 2",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/pictureframe.png",
+                        "chest_opened_img": "images/items/pictureframe_grey.png"
+                    },
+                    {
+                        "visibility_rules": [
+                            "frames_per_level",
+                            "frames_on"
+                        ],
+                        "access_rules": [
+                            "^$frameInfraRule"
+                        ],
+                        "name": "PF 4",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/pictureframe.png",
+                        "chest_opened_img": "images/items/pictureframe_grey.png"
+                    },
+                    {
+                        "visibility_rules": [
+                            "frames_per_level",
+                            "frames_on"
+                        ],
+                        "access_rules": [
+                            "^$frameInfraRule"
+                        ],
+                        "name": "PF 6",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/pictureframe.png",
+                        "chest_opened_img": "images/items/pictureframe_grey.png"
+                    },
+                    {
+                        "name": "Bilby Mum",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/bilby.png",
+                        "chest_opened_img": "images/items/bilby_grey.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map_witp",
+                        "x": 2048,
+                        "y": 3100
+                    }
+                ]
+            },
+            {
+                "name": "End",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Golden Cog 6",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/goldencog.png",
+                        "chest_opened_img": "images/items/goldencog_grey.png"
+                    },
+                    {
+                        "name": "Golden Cog 8",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/goldencog.png",
+                        "chest_opened_img": "images/items/goldencog_grey.png"
+                    },
+                    {
+                        "name": "Golden Cog 9",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/goldencog.png",
+                        "chest_opened_img": "images/items/goldencog_grey.png"
+                    },
+                    {
+                        "visibility_rules": [
+                            "frames_per_level",
+                            "frames_on"
+                        ],
+                        "access_rules": [
+                            "^$frameInfraRule"
+                        ],
+                        "name": "PF 1",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/pictureframe.png",
+                        "chest_opened_img": "images/items/pictureframe_grey.png"
+                    },
+                    {
+                        "visibility_rules": [
+                            "frames_per_level",
+                            "frames_on"
+                        ],
+                        "access_rules": [
+                            "^$frameInfraRule"
+                        ],
+                        "name": "PF 5",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/pictureframe.png",
+                        "chest_opened_img": "images/items/pictureframe_grey.png"
+                    },
+                    {
+                        "name": "Truck Trouble",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/thunderegg.png",
+                        "chest_opened_img": "images/items/thunderegg_grey.png"
+                    },
+                    {
+                        "name": "Collect 300 Opals",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/thunderegg.png",
+                        "chest_opened_img": "images/items/thunderegg_grey.png"
+                    },
+                    {
+                        "name": "Bounce Tree",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/thunderegg.png",
+                        "chest_opened_img": "images/items/thunderegg_grey.png"
+                    },
+                    {
+                        "name": "Turkey Chase",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/thunderegg.png",
+                        "chest_opened_img": "images/items/thunderegg_grey.png"
+                    },
+                    {
+                        "name": "Bilby Grandma",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/bilby.png",
+                        "chest_opened_img": "images/items/bilby_grey.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map_witp",
+                        "x": 3450,
+                        "y": 1500
+                    }
+                ]
+            }
+        ]
+    }
+]

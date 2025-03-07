@@ -1,0 +1,63 @@
+[
+  //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#maps
+  {
+    "name": "map_rainbow_cliffs",
+    "location_size": 32,
+    "location_border_thickness": 1,
+    "img": "images/maps/0. Rainbow Cliffs.png"
+  },
+  {
+    "name": "map_twoup",
+    "location_size": 128,
+    "location_border_thickness": 4,
+    "img": "images/maps/1. Two Up.png"
+  },
+  {
+    "name": "map_witp",
+    "location_size": 128,
+    "location_border_thickness": 4,
+    "img": "images/maps/2. Walk In The Park.png"
+  },
+  {
+    "name": "map_ship_rex",
+    "location_size": 128,
+    "location_border_thickness": 4,
+    "img": "images/maps/3. Ship Rex.png"
+  },
+  {
+    "name": "map_botrt",
+    "location_size": 128,
+    "location_border_thickness": 4,
+    "img": "images/maps/4. Bridge On The River Ty.png"
+  },
+  {
+    "name": "map_snow_worries",
+    "location_size": 128,
+    "location_border_thickness": 4,
+    "img": "images/maps/6. Snow Worries.png"
+  },
+  {
+    "name": "map_outback_safari",
+    "location_size": 128,
+    "location_border_thickness": 4,
+    "img": "images/maps/5. Outback Safari.png"
+  },
+  {
+    "name": "map_llpof",
+    "location_size": 128,
+    "location_border_thickness": 4,
+    "img": "images/maps/7. Lyre, Lyre Pants On Fire.png"
+  },
+  {
+    "name": "map_btbs",
+    "location_size": 128,
+    "location_border_thickness": 4,
+    "img": "images/maps/8. Beyond The Black Stump.png"
+  },
+  {
+    "name": "map_rmts",
+    "location_size": 128,
+    "location_border_thickness": 4,
+    "img": "images/maps/9. Rex Marks The Spot.png"
+  }
+]
