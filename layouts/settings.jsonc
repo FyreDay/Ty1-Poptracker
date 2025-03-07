@@ -10,16 +10,20 @@
                 "item_margin": "2, 2",
                 "h_alignment": "center",
                 "rows": [
-                    [
-                        "scale_sanity",
-                        "frames",
-                        "deathlink",
-                        "frames_require_infra",
+                    [                
+                        "levelunlockstyle",
                         "progressive_level_setting",
                         "progressive_rang_setting",
-                        "levelunlockstyle",
+                        "theggGating",
+                        "cogGating",
+                        "deathlink"
+                    ],
+                    [
                         "sign_sanity",
-                        "life_sanity"
+                        "life_sanity",
+                        "scale_sanity",
+                        "frames",
+                        "frames_require_infra"
                     ]
                 ]
             }

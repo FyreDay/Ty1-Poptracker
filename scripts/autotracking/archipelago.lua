@@ -92,7 +92,30 @@ function onClear(slot_data)
             end
         end
     end
-    --MOVE THESE BELOW RESET ITEMS AFTER YOUR DONE
+
+    -- reset items
+    for _, item_pair in pairs(ITEM_MAPPING) do
+        local item_code = item_pair[1]
+        local item_type = item_pair[2]
+        local item_obj = Tracker:FindObjectForCode(item_code)
+        if item_obj then
+            if item_obj.Type == "toggle" then
+                item_obj.Active = false
+            elseif item_obj.Type == "progressive" then
+                item_obj.CurrentStage = 0
+                item_obj.Active = false
+            elseif item_obj.Type == "consumable" then
+                if item_obj.MinCount then
+                    item_obj.AcquiredCount = item_obj.MinCount
+                else
+                    item_obj.AcquiredCount = 0
+                end
+            elseif item_obj.Type == "progressive_toggle" then
+                item_obj.CurrentStage = 0
+                item_obj.Active = false
+            end
+        end
+    end
     if slot_data['ProgressiveLevel'] then
         local deathlink = Tracker:FindObjectForCode("progressive_level_setting")
         deathlink.Active = (slot_data['ProgressiveLevel'])
@@ -168,33 +191,12 @@ function onClear(slot_data)
             firstportal.Active = true
             local portal1 = Tracker:FindObjectForCode("portal1")
             portal1.Active = true
+        else
+            local portalitem = Tracker:FindObjectForCode("portal-cass'pass")
+            portalitem.Active = true
         end
        
        PORTAL_MAP = slot_data['PortalMap']
-       --print(dump_table(PORTAL_MAP))
-    end
-    -- reset items
-    for _, item_pair in pairs(ITEM_MAPPING) do
-        for item_type, item_code in pairs(item_pair) do
-            local item_obj = Tracker:FindObjectForCode(item_code)
-            if item_obj then
-                if item_obj.Type == "toggle" then
-                    item_obj.Active = false
-                elseif item_obj.Type == "progressive" then
-                    item_obj.CurrentStage = 0
-                    item_obj.Active = false
-                elseif item_obj.Type == "consumable" then
-                    if item_obj.MinCount then
-                        item_obj.AcquiredCount = item_obj.MinCount
-                    else
-                        item_obj.AcquiredCount = 0
-                    end
-                elseif item_obj.Type == "progressive_toggle" then
-                    item_obj.CurrentStage = 0
-                    item_obj.Active = false
-                end
-            end
-        end
     end
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
@@ -223,71 +225,70 @@ function onItem(index, item_id, item_name, player_number)
     CUR_INDEX = index;
     local item = ITEM_MAPPING[item_id]
     if not item or not item[1] then
-        --print(string.format("onItem: could not find item mapping for id %s", item_id))
+        print(string.format("onItem: could not find item mapping for id %s", item_id))
         return
     end
-    for _, item_pair in pairs(item) do
-        item_code = item_pair[1]
-        item_type = item_pair[2]
-        local item_obj = Tracker:FindObjectForCode(item_code)
-        if item_obj then
-            if item_obj.Type == "toggle" then
-                item_obj.Active = true 
-                if string.find(item_code, "portal") then
-                    toggleDisplayPortal(item_code, LEVEL_MAPPING)
-                else
-                    
-                end
-            elseif item_obj.Type == "progressive" then
-                -- print("progressive")
-                item_obj.Active = true
-            elseif item_obj.Type == "consumable" then
+    local item_code = item[1]
+    local item_type = item[2]
+    local item_obj = Tracker:FindObjectForCode(item_code)
+    if item_obj then
+        if item_obj.Type == "toggle" then
+            item_obj.Active = true 
+            if string.find(item_code, "portal") then
+                toggleDisplayPortal(item_code, LEVEL_MAPPING)
+            else
                 
-                -- print("consumable")
-                item_obj.AcquiredCount = item_obj.AcquiredCount + item_obj.Increment * (tonumber(item_pair[3]) or 1)
-                if(item_code == "progressiverang") then
-                    local nextrang = Tracker:FindObjectForCode(ELEMENTAL_MAPPING[item_obj.AcquiredCount][1])
-                    nextrang.Active = true
-                end
-                if(item_code == "progressivelevel") then
-                    
-                    local nextportal = ProgressivePortalUpdated(item_obj, LEVEL_MAPPING, PORTAL_MAP)
-                    nextportal.Active = true
-                end
-                local uls = Tracker:FindObjectForCode("levelunlockstyle")
-                if((uls.CurrentStage == 0 or uls.CurrentStage == 2) and item_code == "firethunderegg") then
-                    
-                    if item_obj.AcquiredCount >= Tracker:ProviderCountForCode("theggGating") then
-                        local boss = Tracker:FindObjectForCode("portal-bull'spen")
-                        boss.Active = true
-                    end
-                end
-                if((uls.CurrentStage == 0 or uls.CurrentStage == 2) and item_code == "icethunderegg") then
-                    
-                    if item_obj.AcquiredCount >= Tracker:ProviderCountForCode("theggGating")then
-                        local boss = Tracker:FindObjectForCode("portal-crikey'scove")
-                        boss.Active = true
-                    end
-                end
-                if((uls.CurrentStage == 0 or uls.CurrentStage == 2) and item_code == "airthunderegg") then
-                    
-                    if item_obj.AcquiredCount >= Tracker:ProviderCountForCode("theggGating") then
-                        local boss = Tracker:FindObjectForCode("portal-fluffy'sfjord")
-                        boss.Active = true
-                    end
-                end
-            elseif item_obj.Type == "progressive_toggle" then
-                -- print("progressive_toggle")
-                if item_obj.Active then
-                    item_obj.CurrentStage = item_obj.CurrentStage + 1
-                else
-                    item_obj.Active = true
+            end
+        elseif item_obj.Type == "progressive" then
+            -- print("progressive")
+            item_obj.Active = true
+        elseif item_obj.Type == "consumable" then
+            
+            -- print("consumable")
+            item_obj.AcquiredCount = item_obj.AcquiredCount + item_obj.Increment * (tonumber(item[3]) or 1)
+            if(item_code == "progressiverang") then
+                local nextrang = Tracker:FindObjectForCode(ELEMENTAL_MAPPING[item_obj.AcquiredCount][1])
+                nextrang.Active = true
+            end
+            if(item_code == "progressivelevel") then
+                
+                local nextportal = ProgressivePortalUpdated(item_obj, LEVEL_MAPPING, PORTAL_MAP)
+                nextportal.Active = true
+            end
+            local uls = Tracker:FindObjectForCode("levelunlockstyle")
+            if((uls.CurrentStage == 0 or uls.CurrentStage == 2) and item_code == "firethunderegg") then
+                
+                if item_obj.AcquiredCount >= Tracker:ProviderCountForCode("theggGating") then
+                    local boss = Tracker:FindObjectForCode("portal-bull'spen")
+                    boss.Active = true
                 end
             end
-        else
-            print(string.format("onItem: could not find object for code %s", item_code[1]))
+            if((uls.CurrentStage == 0 or uls.CurrentStage == 2) and item_code == "icethunderegg") then
+                
+                if item_obj.AcquiredCount >= Tracker:ProviderCountForCode("theggGating")then
+                    local boss = Tracker:FindObjectForCode("portal-crikey'scove")
+                    boss.Active = true
+                end
+            end
+            if((uls.CurrentStage == 0 or uls.CurrentStage == 2) and item_code == "airthunderegg") then
+                
+                if item_obj.AcquiredCount >= Tracker:ProviderCountForCode("theggGating") then
+                    local boss = Tracker:FindObjectForCode("portal-fluffy'sfjord")
+                    boss.Active = true
+                end
+            end
+        elseif item_obj.Type == "progressive_toggle" then
+            -- print("progressive_toggle")
+            if item_obj.Active then
+                item_obj.CurrentStage = item_obj.CurrentStage + 1
+            else
+                item_obj.Active = true
+            end
         end
+    else
+        print(string.format("onItem: could not find object for code %s", item_code[1]))
     end
+
 end
 
 --called when a location gets cleared

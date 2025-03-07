@@ -198,16 +198,16 @@ function chronorangRule()
     return Tracker:ProviderCountForCode("goldencog") >= Tracker:ProviderCountForCode("cogGating")*6 
 end
 
-function frogGated()
-    return Tracker:ProviderCountForCode("firethunderegg") >= Tracker:ProviderCountForCode("theggGating")
+function flamerangRule()
+    return Tracker:ProviderCountForCode("firethunderegg") >= Tracker:ProviderCountForCode("theggGating") and has("frogtalisman")
 end
 
-function platypusGated()
-    return Tracker:ProviderCountForCode("icethunderegg") >= Tracker:ProviderCountForCode("theggGating")
+function frostyrangRule()
+    return Tracker:ProviderCountForCode("icethunderegg") >= Tracker:ProviderCountForCode("theggGating") and has("platypustalisman")
 end
 
-function cockatooGated()
-    return Tracker:ProviderCountForCode("airthunderegg") >= Tracker:ProviderCountForCode("theggGating")
+function zappyrangRule()
+    return Tracker:ProviderCountForCode("airthunderegg") >= Tracker:ProviderCountForCode("theggGating") and has("cockatootalisman")
 end
 
 function ProgressivePortalUpdated(item_obj, LEVEL_MAPPING, PORTAL_MAP)

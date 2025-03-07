@@ -42,7 +42,7 @@
         "codes": "frames_require_infra"
     },
     {
-        "name": "CogGating",
+        "name": "Cogs Required for each Technorang",
         "type": "consumable",
         "max_quantity": 15,
         "increment": 1,
@@ -54,7 +54,7 @@
         "codes": "cogGating"
     },
     {
-        "name": "TheggGating",
+        "name": "Thundereggs required for boss and/or Elemental checks",
         "type": "consumable",
         "max_quantity": 24,
         "increment": 1,
@@ -73,7 +73,7 @@
         "stages": [
             {
                 "img": "images/settings/frame_sanity.png",
-                "name": "Frame Sanity Enabled",
+                "name": "Frame Sanity",
                 "codes": "frames,frames_on",
                 "inherit_codes": false
             },
