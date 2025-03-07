@@ -7,7 +7,6 @@
         "codes": "portal1",
         "initial_stage_idx": 0,
         "stages": [
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Two Up",
@@ -26,7 +25,6 @@
                 "codes": "portal_shiprex",
                 "inherit_codes": false
             },
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Bridge on the River Ty",
@@ -45,7 +43,6 @@
                 "codes": "portal_outbacksafari",
                 "inherit_codes": false
             },
-
             {
                 "img": "images/items/portal.png",
                 "name": "Lyre,lyre Pants on Fire",
@@ -74,7 +71,6 @@
         "codes": "portal2",
         "initial_stage_idx": 1,
         "stages": [
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Two Up",
@@ -93,7 +89,6 @@
                 "codes": "portal_shiprex",
                 "inherit_codes": false
             },
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Bridge on the River Ty",
@@ -112,7 +107,6 @@
                 "codes": "portal_outbacksafari",
                 "inherit_codes": false
             },
-
             {
                 "img": "images/items/portal.png",
                 "name": "Lyre,lyre Pants on Fire",
@@ -141,7 +135,6 @@
         "codes": "portal3",
         "initial_stage_idx": 2,
         "stages": [
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Two Up",
@@ -160,7 +153,6 @@
                 "codes": "portal_shiprex",
                 "inherit_codes": false
             },
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Bridge on the River Ty",
@@ -179,7 +171,6 @@
                 "codes": "portal_outbacksafari",
                 "inherit_codes": false
             },
-
             {
                 "img": "images/items/portal.png",
                 "name": "Lyre,lyre Pants on Fire",
@@ -208,7 +199,6 @@
         "codes": "portal4",
         "initial_stage_idx": 3,
         "stages": [
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Two Up",
@@ -227,7 +217,6 @@
                 "codes": "portal_shiprex",
                 "inherit_codes": false
             },
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Bridge on the River Ty",
@@ -246,7 +235,6 @@
                 "codes": "portal_outbacksafari",
                 "inherit_codes": false
             },
-
             {
                 "img": "images/items/portal.png",
                 "name": "Lyre,lyre Pants on Fire",
@@ -275,7 +263,6 @@
         "codes": "portal5",
         "initial_stage_idx": 4,
         "stages": [
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Two Up",
@@ -294,7 +281,6 @@
                 "codes": "portal_shiprex",
                 "inherit_codes": false
             },
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Bridge on the River Ty",
@@ -313,7 +299,6 @@
                 "codes": "portal_outbacksafari",
                 "inherit_codes": false
             },
-
             {
                 "img": "images/items/portal.png",
                 "name": "Lyre,lyre Pants on Fire",
@@ -342,7 +327,6 @@
         "codes": "portal6",
         "initial_stage_idx": 5,
         "stages": [
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Two Up",
@@ -361,7 +345,6 @@
                 "codes": "portal_shiprex",
                 "inherit_codes": false
             },
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Bridge on the River Ty",
@@ -380,7 +363,6 @@
                 "codes": "portal_outbacksafari",
                 "inherit_codes": false
             },
-
             {
                 "img": "images/items/portal.png",
                 "name": "Lyre,lyre Pants on Fire",
@@ -409,7 +391,6 @@
         "codes": "portal7",
         "initial_stage_idx": 6,
         "stages": [
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Two Up",
@@ -428,7 +409,6 @@
                 "codes": "portal_shiprex",
                 "inherit_codes": false
             },
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Bridge on the River Ty",
@@ -447,7 +427,6 @@
                 "codes": "portal_outbacksafari",
                 "inherit_codes": false
             },
-
             {
                 "img": "images/items/portal.png",
                 "name": "Lyre,lyre Pants on Fire",
@@ -476,7 +455,6 @@
         "codes": "portal8",
         "initial_stage_idx": 7,
         "stages": [
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Two Up",
@@ -495,7 +473,6 @@
                 "codes": "portal_shiprex",
                 "inherit_codes": false
             },
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Bridge on the River Ty",
@@ -514,7 +491,6 @@
                 "codes": "portal_outbacksafari",
                 "inherit_codes": false
             },
-
             {
                 "img": "images/items/portal.png",
                 "name": "Lyre,lyre Pants on Fire",
@@ -543,7 +519,6 @@
         "codes": "portal9",
         "initial_stage_idx": 8,
         "stages": [
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Two Up",
@@ -562,7 +537,6 @@
                 "codes": "portal_shiprex",
                 "inherit_codes": false
             },
-            
             {
                 "img": "images/items/portal.png",
                 "name": "Bridge on the River Ty",
@@ -581,7 +555,6 @@
                 "codes": "portal_outbacksafari",
                 "inherit_codes": false
             },
-
             {
                 "img": "images/items/portal.png",
                 "name": "Lyre,lyre Pants on Fire",

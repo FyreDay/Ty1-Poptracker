@@ -119,8 +119,8 @@
                 "map_locations": [
                     {
                         "map": "map_witp",
-                        "x": 200,
-                        "y": 200
+                        "x": 2800,
+                        "y": 250
                     }
                 ],
                 "access_rules": [],

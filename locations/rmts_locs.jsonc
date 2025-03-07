@@ -14,8 +14,8 @@
         "map_locations": [
           {
             "map": "map_rmts",
-            "x": 200,
-            "y": 200
+            "x": 2800,
+            "y": 250
           }
         ],
         "access_rules": [],
@@ -25,7 +25,7 @@
             "item_count": 1,
             "chest_unopened_img": "images/items/bilby.png",
             "chest_opened_img": "images/items/bilby_grey.png"
-        },
+          },
           {
             "name": "Find 5 Bilbies",
             "item_count": 1,

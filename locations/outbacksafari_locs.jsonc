@@ -1,273 +1,268 @@
 [
-    {
-        "name": "Outback Safari",
+  {
+    "name": "Outback Safari",
+    "map_locations": [
+      {
+        "map": "map_outback_safari",
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "children": [
+      {
+        "name": "Completion",
         "map_locations": [
           {
             "map": "map_outback_safari",
-            "x": 0,
-            "y": 0
+            "x": 2800,
+            "y": 250
           }
         ],
-        "children": [
+        "access_rules": [],
+        "sections": [
           {
-            "name": "Completion",
-            "map_locations": [
-              {
-                "map": "map_outback_safari",
-                "x": 200,
-                "y": 200
-              }
-            ],
-            "access_rules": [],
-            "sections": [
-              {
-                "name": "Bilby Completion",
-                "item_count": 1,
-                "chest_unopened_img": "images/items/bilby.png",
-                "chest_opened_img": "images/items/bilby_grey.png"
-            },
-              {
-                "name": "Find 5 Bilbies",
-                "item_count": 1,
-                "chest_unopened_img": "images/items/bilby.png",
-                "chest_opened_img": "images/items/bilby_grey.png"
-              },
-              {
-                "name": "All Golden Cogs",
-                "item_count": 1,
-                "chest_unopened_img": "images/items/goldencog.png",
-                "chest_opened_img": "images/items/goldencog_grey.png"
-              },
-              {
-                "access_rules": [
-                  "stopwatch-outbacksafari"
-                ],
-                "name": "Time Attack Challenge",
-                "item_count": 1,
-                "chest_unopened_img": "images/items/stopwatch.png",
-                "chest_opened_img": "images/items/stopwatch_grey.png"
-              }
-            ]
+            "name": "Bilby Completion",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/bilby.png",
+            "chest_opened_img": "images/items/bilby_grey.png"
           },
-            {
-              "name": "Shazza Loop",
-              "map_locations": [
-                {
-                    "map": "map_outback_safari",
-                    "x": 2750,
-                    "y": 3000
-                }
-                ],
-                "access_rules": [
-                ],
-                "sections": [
-                  {
-                    "name": "Golden Cog 3",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/goldencog.png",
-                    "chest_opened_img": "images/items/goldencog_grey.png"
-                  },
-                  {
-                    "name": "Golden Cog 5",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/goldencog.png",
-                    "chest_opened_img": "images/items/goldencog_grey.png"
-                  },
-                  {
-                    "name": "Golden Cog 9",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/goldencog.png",
-                    "chest_opened_img": "images/items/goldencog_grey.png"
-                  },
-                  {
-                    "name": "Bilby Girl",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/bilby.png",
-                    "chest_opened_img": "images/items/bilby_grey.png"
-                  },
-                  {
-                    "access_rules": [
-                      "stopwatch-outbacksafari"
-                    ],
-                    "name": "Race Shazza",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/thunderegg.png",
-                    "chest_opened_img": "images/items/thunderegg_grey.png"
-                  },
-                  {
-                    "name": "Emu Roundup",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/thunderegg.png",
-                    "chest_opened_img": "images/items/thunderegg_grey.png"
-                  },
-                  {
-                    "name": "Frill Frenzy",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/thunderegg.png",
-                    "chest_opened_img": "images/items/thunderegg_grey.png"
-                  },
-                  {
-                    "visibility_rules": [
-                      "life_sanity"
-                    ],
-                    "name": "Extra Life 3",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/life.png",
-                    "chest_opened_img": "images/items/life_grey.png"
-                  },
-                ]
-            },
-            {
-              "name": "Emu Town",
-              "map_locations": [
-                {
-                    "map": "map_outback_safari",
-                    "x": 1550,
-                    "y": 3300
-                }
-                ],
-                "access_rules": [
-                ],
-                "sections": [
-                  {
-                    "name": "Golden Cog 4",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/goldencog.png",
-                    "chest_opened_img": "images/items/goldencog_grey.png"
-                  },
-                  {
-                    "name": "Golden Cog 6",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/goldencog.png",
-                    "chest_opened_img": "images/items/goldencog_grey.png"
-                  },
-                  {
-                    "name": "Golden Cog 7",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/goldencog.png",
-                    "chest_opened_img": "images/items/goldencog_grey.png"
-                  },
-                  {
-                    "name": "Bilby Mum",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/bilby.png",
-                    "chest_opened_img": "images/items/bilby_grey.png"
-                  },
-                  {
-                    "name": "Bilby Boy",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/bilby.png",
-                    "chest_opened_img": "images/items/bilby_grey.png"
-                  },
-                  {
-                    "name": "Fire Fight",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/thunderegg.png",
-                    "chest_opened_img": "images/items/thunderegg_grey.png"
-                  },
-                  {
-                    "visibility_rules": [
-                      "life_sanity"
-                    ],
-                    "name": "Extra Life 1",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/life.png",
-                    "chest_opened_img": "images/items/life_grey.png"
-                  },
-                  
-                ]
-            },
-            {
-              "name": "Upper Waterfall",
-              "map_locations": [
-                {
-                    "map": "map_outback_safari",
-                    "x": 2100,
-                    "y": 1300
-                }
-                ],
-                "access_rules": [
-                ],
-                "sections": [
-                  {
-                    "name": "Golden Cog 1",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/goldencog.png",
-                    "chest_opened_img": "images/items/goldencog_grey.png"
-                  },
-                  {
-                    "name": "Golden Cog 10",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/goldencog.png",
-                    "chest_opened_img": "images/items/goldencog_grey.png"
-                  },
-                  {
-                    "visibility_rules": [
-                      "life_sanity"
-                    ],
-                    "name": "Extra Life 2",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/life.png",
-                    "chest_opened_img": "images/items/life_grey.png"
-                  }
-                ]
-            },
-            {
-              "name": "Lower Waterfall",
-              "map_locations": [
-                {
-                    "map": "map_outback_safari",
-                    "x": 1200,
-                    "y": 2000
-                }
-                ],
-                "access_rules": [
-                ],
-                "sections": [
-                  {
-                    "name": "Golden Cog 2",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/goldencog.png",
-                    "chest_opened_img": "images/items/goldencog_grey.png"
-                  },
-                  {
-                    "name": "Golden Cog 8",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/goldencog.png",
-                    "chest_opened_img": "images/items/goldencog_grey.png"
-                  },
-                  {
-                    "name": "Bilby Dad",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/bilby.png",
-                    "chest_opened_img": "images/items/bilby_grey.png"
-                  },
-                  {
-                    "name": "Bilby Grandma",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/bilby.png",
-                    "chest_opened_img": "images/items/bilby_grey.png"
-                  },
-                  {
-                    "name": "Collect 300 Opals",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/thunderegg.png",
-                    "chest_opened_img": "images/items/thunderegg_grey.png"
-                  },
-                  {
-                    "name": "Toxic Trouble",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/thunderegg.png",
-                    "chest_opened_img": "images/items/thunderegg_grey.png"
-                  },
-                  {
-                    "name": "Secret Thunder Egg",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/thunderegg.png",
-                    "chest_opened_img": "images/items/thunderegg_grey.png"
-                  }
-                ]
-            }
+          {
+            "name": "Find 5 Bilbies",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/bilby.png",
+            "chest_opened_img": "images/items/bilby_grey.png"
+          },
+          {
+            "name": "All Golden Cogs",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "access_rules": [
+              "stopwatch-outbacksafari"
+            ],
+            "name": "Time Attack Challenge",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/stopwatch.png",
+            "chest_opened_img": "images/items/stopwatch_grey.png"
+          }
         ]
-    }
+      },
+      {
+        "name": "Shazza Loop",
+        "map_locations": [
+          {
+            "map": "map_outback_safari",
+            "x": 2750,
+            "y": 3000
+          }
+        ],
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Golden Cog 3",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "name": "Golden Cog 5",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "name": "Golden Cog 9",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "name": "Bilby Girl",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/bilby.png",
+            "chest_opened_img": "images/items/bilby_grey.png"
+          },
+          {
+            "access_rules": [
+              "stopwatch-outbacksafari"
+            ],
+            "name": "Race Shazza",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/thunderegg.png",
+            "chest_opened_img": "images/items/thunderegg_grey.png"
+          },
+          {
+            "name": "Emu Roundup",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/thunderegg.png",
+            "chest_opened_img": "images/items/thunderegg_grey.png"
+          },
+          {
+            "name": "Frill Frenzy",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/thunderegg.png",
+            "chest_opened_img": "images/items/thunderegg_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "life_sanity"
+            ],
+            "name": "Extra Life 3",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/life.png",
+            "chest_opened_img": "images/items/life_grey.png"
+          },
+        ]
+      },
+      {
+        "name": "Emu Town",
+        "map_locations": [
+          {
+            "map": "map_outback_safari",
+            "x": 1550,
+            "y": 3300
+          }
+        ],
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Golden Cog 4",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "name": "Golden Cog 6",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "name": "Golden Cog 7",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "name": "Bilby Mum",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/bilby.png",
+            "chest_opened_img": "images/items/bilby_grey.png"
+          },
+          {
+            "name": "Bilby Boy",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/bilby.png",
+            "chest_opened_img": "images/items/bilby_grey.png"
+          },
+          {
+            "name": "Fire Fight",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/thunderegg.png",
+            "chest_opened_img": "images/items/thunderegg_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "life_sanity"
+            ],
+            "name": "Extra Life 1",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/life.png",
+            "chest_opened_img": "images/items/life_grey.png"
+          },
+        ]
+      },
+      {
+        "name": "Upper Waterfall",
+        "map_locations": [
+          {
+            "map": "map_outback_safari",
+            "x": 2100,
+            "y": 1300
+          }
+        ],
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Golden Cog 1",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "name": "Golden Cog 10",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "visibility_rules": [
+              "life_sanity"
+            ],
+            "name": "Extra Life 2",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/life.png",
+            "chest_opened_img": "images/items/life_grey.png"
+          }
+        ]
+      },
+      {
+        "name": "Lower Waterfall",
+        "map_locations": [
+          {
+            "map": "map_outback_safari",
+            "x": 1200,
+            "y": 2000
+          }
+        ],
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Golden Cog 2",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "name": "Golden Cog 8",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/goldencog.png",
+            "chest_opened_img": "images/items/goldencog_grey.png"
+          },
+          {
+            "name": "Bilby Dad",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/bilby.png",
+            "chest_opened_img": "images/items/bilby_grey.png"
+          },
+          {
+            "name": "Bilby Grandma",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/bilby.png",
+            "chest_opened_img": "images/items/bilby_grey.png"
+          },
+          {
+            "name": "Collect 300 Opals",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/thunderegg.png",
+            "chest_opened_img": "images/items/thunderegg_grey.png"
+          },
+          {
+            "name": "Toxic Trouble",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/thunderegg.png",
+            "chest_opened_img": "images/items/thunderegg_grey.png"
+          },
+          {
+            "name": "Secret Thunder Egg",
+            "item_count": 1,
+            "chest_unopened_img": "images/items/thunderegg.png",
+            "chest_opened_img": "images/items/thunderegg_grey.png"
+          }
+        ]
+      }
+    ]
+  }
 ]

@@ -135,13 +135,11 @@ function onClear(slot_data)
     if slot_data['CogGating'] then
         local cogGating = Tracker:FindObjectForCode("cogGating")
         cogGating.AcquiredCount = (slot_data['CogGating'])
-        print(cogGating.AcquiredCount)
     end
 
     if slot_data['TheggGating'] then
         local theggGating = Tracker:FindObjectForCode("theggGating")
         theggGating.AcquiredCount = (slot_data['TheggGating'])
-        print(theggGating.AcquiredCount)
     end
 
     if slot_data['LevelUnlockStyle'] then
@@ -150,18 +148,27 @@ function onClear(slot_data)
     end
 
     if slot_data['PortalMap'] then
-        
+        local uls = Tracker:FindObjectForCode("levelunlockstyle")
         local int i = 1;
         for _,id in pairs(slot_data['PortalMap']) do
             local portal = Tracker:FindObjectForCode("portal"..i)
             portal.CurrentStage = LEVEL_MAPPING[id][2]
-            portal.Active = false
+            if uls.CurrentStage == 0 then
+                portal.Active = true
+                local portalitem = Tracker:FindObjectForCode(LEVEL_MAPPING[id][1])
+                portalitem.Active = true
+            else
+                portal.Active = false
+            end
+            
             i = i+1
         end
-        local firstportal = Tracker:FindObjectForCode(LEVEL_MAPPING[slot_data['PortalMap'][1]][1])
-        firstportal.Active = true
-        local portal1 = Tracker:FindObjectForCode("portal1")
-        portal1.Active = true
+        if uls.CurrentStage ~= 0 then
+            local firstportal = Tracker:FindObjectForCode(LEVEL_MAPPING[slot_data['PortalMap'][1]][1])
+            firstportal.Active = true
+            local portal1 = Tracker:FindObjectForCode("portal1")
+            portal1.Active = true
+        end
        
        PORTAL_MAP = slot_data['PortalMap']
        --print(dump_table(PORTAL_MAP))
@@ -246,6 +253,28 @@ function onItem(index, item_id, item_name, player_number)
                     
                     local nextportal = ProgressivePortalUpdated(item_obj, LEVEL_MAPPING, PORTAL_MAP)
                     nextportal.Active = true
+                end
+                local uls = Tracker:FindObjectForCode("levelunlockstyle")
+                if((uls.CurrentStage == 0 or uls.CurrentStage == 2) and item_code == "firethunderegg") then
+                    
+                    if item_obj.AcquiredCount >= Tracker:ProviderCountForCode("theggGating") then
+                        local boss = Tracker:FindObjectForCode("portal-bull'spen")
+                        boss.Active = true
+                    end
+                end
+                if((uls.CurrentStage == 0 or uls.CurrentStage == 2) and item_code == "icethunderegg") then
+                    
+                    if item_obj.AcquiredCount >= Tracker:ProviderCountForCode("theggGating")then
+                        local boss = Tracker:FindObjectForCode("portal-crikey'scove")
+                        boss.Active = true
+                    end
+                end
+                if((uls.CurrentStage == 0 or uls.CurrentStage == 2) and item_code == "airthunderegg") then
+                    
+                    if item_obj.AcquiredCount >= Tracker:ProviderCountForCode("theggGating") then
+                        local boss = Tracker:FindObjectForCode("portal-fluffy'sfjord")
+                        boss.Active = true
+                    end
                 end
             elseif item_obj.Type == "progressive_toggle" then
                 -- print("progressive_toggle")

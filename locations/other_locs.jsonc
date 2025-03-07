@@ -111,6 +111,36 @@
                 "chest_unopened_img": "images/items/life.png",
                 "chest_opened_img": "images/items/life_grey.png"
             },
+            {
+                "name": "Dingo Talisman",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/talisman.png",
+                "chest_opened_img": "images/items/talisman_grey.png"
+            }
+        ]
+    },
+    {
+        "name": "Final Battle",
+        "map_locations": [
+            {
+                "map": "map_cass",
+                "x": 385,
+                "y": 370
+            }
+        ],
+        "sections": [
+            {
+                "name": "Tiger Talisman",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/talisman.png",
+                "chest_opened_img": "images/items/talisman_grey.png"
+            },
+            {
+                "name": "Doomerang",
+                "item_count": 1,
+                "chest_unopened_img": "images/items/talisman.png",
+                "chest_opened_img": "images/items/talisman_grey.png"
+            }
         ]
     },
     {

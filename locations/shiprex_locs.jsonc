@@ -81,11 +81,11 @@
             {
                 "name": "Completion",
                 "map_locations": [
-                  {
-                    "map": "map_ship_rex",
-                    "x": 200,
-                    "y": 200
-                  }
+                    {
+                        "map": "map_ship_rex",
+                        "x": 2800,
+                        "y": 250
+                    }
                 ],
                 "access_rules": [],
                 "sections": [
@@ -95,42 +95,42 @@
                         "chest_unopened_img": "images/items/bilby.png",
                         "chest_opened_img": "images/items/bilby_grey.png"
                     },
-                  {
-                    "name": "Find 5 Bilbies",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/bilby.png",
-                    "chest_opened_img": "images/items/bilby_grey.png"
-                  },
-                  {
-                    "name": "All Golden Cogs",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/goldencog.png",
-                    "chest_opened_img": "images/items/goldencog_grey.png"
-                  },
-                  {
-                    "visibility_rules": [
-                      "frames_per_level",
-                      "frames_on"
-                    ],
-                    "access_rules": [
-                      "^$frameInfraRule"
-                    ],
-                    "name": "All Picture Frames",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/pictureframe.png",
-                    "chest_opened_img": "images/items/pictureframe_grey.png"
-                  },
-                  {
-                    "access_rules": [
-                      "stopwatch-shiprex"
-                    ],
-                    "name": "Time Attack Challenge",
-                    "item_count": 1,
-                    "chest_unopened_img": "images/items/stopwatch.png",
-                    "chest_opened_img": "images/items/stopwatch_grey.png"
-                  }
+                    {
+                        "name": "Find 5 Bilbies",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/bilby.png",
+                        "chest_opened_img": "images/items/bilby_grey.png"
+                    },
+                    {
+                        "name": "All Golden Cogs",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/goldencog.png",
+                        "chest_opened_img": "images/items/goldencog_grey.png"
+                    },
+                    {
+                        "visibility_rules": [
+                            "frames_per_level",
+                            "frames_on"
+                        ],
+                        "access_rules": [
+                            "^$frameInfraRule"
+                        ],
+                        "name": "All Picture Frames",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/pictureframe.png",
+                        "chest_opened_img": "images/items/pictureframe_grey.png"
+                    },
+                    {
+                        "access_rules": [
+                            "stopwatch-shiprex"
+                        ],
+                        "name": "Time Attack Challenge",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/items/stopwatch.png",
+                        "chest_opened_img": "images/items/stopwatch_grey.png"
+                    }
                 ]
-              },
+            },
             {
                 "name": "Main",
                 "access_rules": [
@@ -146,8 +146,6 @@
                     }
                 ],
                 "sections": [
-                    
-                    
                     {
                         "name": "Golden Cog 2",
                         "item_count": 1,
@@ -170,21 +168,18 @@
                         "chest_unopened_img": "images/items/goldencog.png",
                         "chest_opened_img": "images/items/goldencog_grey.png"
                     },
-                    
                     {
                         "name": "Bilby Dad",
                         "item_count": 1,
                         "chest_unopened_img": "images/items/bilby.png",
                         "chest_opened_img": "images/items/bilby_grey.png"
                     },
-                    
                     {
                         "name": "Bilby Girl",
                         "item_count": 1,
                         "chest_unopened_img": "images/items/bilby.png",
                         "chest_opened_img": "images/items/bilby_grey.png"
                     },
-                    
                     {
                         "access_rules": [
                             "swim",
@@ -195,7 +190,6 @@
                         "chest_unopened_img": "images/items/thunderegg.png",
                         "chest_opened_img": "images/items/thunderegg_grey.png"
                     },
-                    
                     {
                         "visibility_rules": [
                             "frames_per_level",

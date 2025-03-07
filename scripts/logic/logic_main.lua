@@ -174,7 +174,41 @@ function frameInfraRule()
     return AccessibilityLevel.Normal
 end
 
-function 
+function zoomerangRule()
+    return Tracker:ProviderCountForCode("goldencog") >= Tracker:ProviderCountForCode("cogGating") 
+end
+
+function multirangRule()
+    return Tracker:ProviderCountForCode("goldencog") >= Tracker:ProviderCountForCode("cogGating")*2 
+end
+
+function infrarangRule()
+    return Tracker:ProviderCountForCode("goldencog") >= Tracker:ProviderCountForCode("cogGating")*3 
+end
+
+function megarangRule()
+    return Tracker:ProviderCountForCode("goldencog") >= Tracker:ProviderCountForCode("cogGating")*4 
+end
+
+function kaboomerangRule()
+    return Tracker:ProviderCountForCode("goldencog") >= Tracker:ProviderCountForCode("cogGating")*5 
+end
+
+function chronorangRule()
+    return Tracker:ProviderCountForCode("goldencog") >= Tracker:ProviderCountForCode("cogGating")*6 
+end
+
+function frogGated()
+    return Tracker:ProviderCountForCode("firethunderegg") >= Tracker:ProviderCountForCode("theggGating")
+end
+
+function platypusGated()
+    return Tracker:ProviderCountForCode("icethunderegg") >= Tracker:ProviderCountForCode("theggGating")
+end
+
+function cockatooGated()
+    return Tracker:ProviderCountForCode("airthunderegg") >= Tracker:ProviderCountForCode("theggGating")
+end
 
 function ProgressivePortalUpdated(item_obj, LEVEL_MAPPING, PORTAL_MAP)
     --progressivelevel is always 1 less then the unlocked indexes
