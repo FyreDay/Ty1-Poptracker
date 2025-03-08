@@ -3,6 +3,7 @@
     "game_name": "Ty the Tasmanian Tiger",
     "package_version": "1.0.0",
     "package_uid": "ty the tasmanian tiger_ap",
+    "platform": "PC",
     "author": "FyreDay",
     "variants": {
         "Map Tracker": {
