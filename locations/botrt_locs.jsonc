@@ -326,6 +326,9 @@
             "chest_opened_img": "images/items/bilby_grey.png"
           },
           {
+            "access_rules": [
+              "dive"
+            ],
             "name": "Ty Diving",
             "item_count": 1,
             "chest_unopened_img": "images/items/thunderegg.png",
@@ -347,9 +350,6 @@
       },
       {
         "name": "Upper",
-        "access_rules": [
-          "[secondrang]"
-        ],
         "map_locations": [
           {
             "map": "map_botrt",
