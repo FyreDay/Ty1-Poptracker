@@ -199,15 +199,18 @@ function chronorangRule()
 end
 
 function flamerangRule()
-    return Tracker:ProviderCountForCode("firethunderegg") >= Tracker:ProviderCountForCode("theggGating") and has("frogtalisman")
+    return Tracker:ProviderCountForCode("firethunderegg") >= Tracker:ProviderCountForCode("theggGating") 
+    and Tracker:FindObjectForCode("@Rainbow Cliffs/Hub 1/Frog Talisman").AvailableChestCount == 0
 end
 
 function frostyrangRule()
-    return Tracker:ProviderCountForCode("icethunderegg") >= Tracker:ProviderCountForCode("theggGating") and has("platypustalisman")
+    return Tracker:ProviderCountForCode("icethunderegg") >= Tracker:ProviderCountForCode("theggGating") --and has("platypustalisman")
+    and Tracker:FindObjectForCode("@Rainbow Cliffs/Hub 2/Platypus Talisman").AvailableChestCount == 0
 end
 
 function zappyrangRule()
-    return Tracker:ProviderCountForCode("airthunderegg") >= Tracker:ProviderCountForCode("theggGating") and has("cockatootalisman")
+    return Tracker:ProviderCountForCode("airthunderegg") >= Tracker:ProviderCountForCode("theggGating") --and has("cockatootalisman")
+    and Tracker:FindObjectForCode("@Rainbow Cliffs/Hub 3/Cockatoo Talisman").AvailableChestCount == 0
 end
 
 function ProgressivePortalUpdated(item_obj, LEVEL_MAPPING, PORTAL_MAP)
