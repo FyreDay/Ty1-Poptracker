@@ -18,7 +18,7 @@
         "codes": "scale_sanity"
     },
     {
-        "name": "life Sanity",
+        "name": "Life Sanity",
         "type": "toggle",
         "img": "images/items/life.png",
         "codes": "life_sanity"
@@ -54,7 +54,7 @@
         "codes": "cogGating"
     },
     {
-        "name": "Thundereggs required for boss and/or Elemental checks",
+        "name": "Thundereggs required for Boss and/or Elemental checks",
         "type": "consumable",
         "max_quantity": 24,
         "increment": 1,

@@ -13,7 +13,7 @@
         "visibility_rules": [
           "sign_sanity"
         ],
-        "name": "Signpost 1",
+        "name": "Signpost 2",
         "item_count": 1,
         "chest_unopened_img": "images/items/sign.png",
         "chest_opened_img": "images/items/sign_grey.png"
@@ -362,7 +362,7 @@
             "visibility_rules": [
               "sign_sanity"
             ],
-            "name": "Signpost 2",
+            "name": "Signpost 1",
             "item_count": 1,
             "chest_unopened_img": "images/items/sign.png",
             "chest_opened_img": "images/items/sign_grey.png"
