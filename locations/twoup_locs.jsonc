@@ -17,6 +17,7 @@
                 "access_rules": [],
                 "sections": [
                     {
+                        "access_rules": ["{portal-twoup}"],
                         "name": "Bilby Completion",
                         "item_count": 1,
                         "chest_unopened_img": "images/items/bilby.png",
@@ -49,7 +50,7 @@
                     },
                     {
                         "access_rules": [
-                            "stopwatch-twoup"
+                            "stopwatch-twoup","gateTimeAttacks,Glide The Gap"
                         ],
                         "name": "Time Attack Challenge",
                         "item_count": 1,
@@ -115,7 +116,7 @@
                     },
                     {
                         "access_rules": [
-                            "stopwatch-twoup"
+                            "gateTimeAttacks,stopwatch-twoup","$A1mainthegg"
                         ],
                         "name": "Time Attack",
                         "item_count": 1,

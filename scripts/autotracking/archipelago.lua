@@ -155,6 +155,11 @@ function onClear(slot_data)
         frameinfra.Active = (slot_data['FramesRequireInfra'])
     end
 
+    if slot_data['GateTimeAttacks'] then
+        local frameinfra = Tracker:FindObjectForCode("gateTimeAttacks")
+        frameinfra.Active = (slot_data['GateTimeAttacks'])
+    end
+
     if slot_data['CogGating'] then
         local cogGating = Tracker:FindObjectForCode("cogGating")
         cogGating.AcquiredCount = (slot_data['CogGating'])
@@ -307,6 +312,10 @@ function onLocation(location_id, location_name)
                 location_obj.AvailableChestCount = location_obj.AvailableChestCount - 1
             else
                 location_obj.Active = true
+            end
+
+            if location_id == 141885699 then
+                Tracker:FindObjectForCode("a1thegg").Active = true
             end
         else
             print(string.format("onLocation: could not find location_object for code %s", location))

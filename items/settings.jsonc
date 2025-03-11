@@ -36,6 +36,12 @@
         "codes": "deathlink"
     },
     {
+        "name": "Gate Time Attacks",
+        "type": "toggle",
+        "img": "images/items/stopwatch.png",
+        "codes": "gateTimeAttacks"
+    },
+    {
         "name": "Frames Require Infra",
         "type": "toggle",
         "img": "images/settings/frame_require_infra.png",
@@ -116,5 +122,17 @@
                 "inherit_codes": false
             }
         ]
-    }
+    },
+
+
+
+
+
+    //helpers
+    {
+        "name": "A1 Main Thegg",
+        "type": "toggle",
+        "img": "images/items/thegg.png",
+        "codes": "a1thegg"
+      },
 ]

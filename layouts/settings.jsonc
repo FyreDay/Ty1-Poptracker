@@ -23,7 +23,8 @@
                         "life_sanity",
                         "scale_sanity",
                         "frames",
-                        "frames_require_infra"
+                        "frames_require_infra",
+                        "gateTimeAttacks"
                     ]
                 ]
             }

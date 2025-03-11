@@ -213,6 +213,14 @@ function zappyrangRule()
     and Tracker:FindObjectForCode("@Rainbow Cliffs/Hub 3/Cockatoo Talisman").AvailableChestCount == 0
 end
 
+function A1mainthegg()
+    return has("a1thegg") and not has("gateTimeAttacks")
+end
+
+function Not(item)
+    return not has(item)
+end
+
 function ProgressivePortalUpdated(item_obj, LEVEL_MAPPING, PORTAL_MAP)
     --progressivelevel is always 1 less then the unlocked indexes
     local unlockstyle = Tracker:FindObjectForCode("levelunlockstyle")
