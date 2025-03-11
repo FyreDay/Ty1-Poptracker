@@ -1,6 +1,9 @@
 [
     {
         "name": "WitP",
+        "access_rules": [
+            "portal-walkinthepark"
+        ],
         "map_locations": [
             {
                 "map": "map_witp",

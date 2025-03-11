@@ -1,6 +1,9 @@
 [
   {
     "name": "Snow Worries",
+    "access_rules": [
+      "portal-snowworries"
+    ],
     "map_locations": [
       {
         "map": "map_snow_worries",

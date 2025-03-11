@@ -1,6 +1,9 @@
 [
     {
         "name": "Ship Rex",
+        "access_rules": [
+            "portal-shiprex"
+        ],
         "map_locations": [
             {
                 "map": "map_ship_rex",

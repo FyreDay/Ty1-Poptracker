@@ -1,6 +1,9 @@
 [
     {
         "name": "Two Up",
+        "access_rules": [
+            "portal-twoup"
+        ],
         "children": [
             {
                 "name": "Completion",

@@ -1,6 +1,9 @@
 [
   {
     "name": "BtBS",
+    "access_rules": [
+      "portal-beyondtheblackstump"
+    ],
     "map_locations": [
       {
         "map": "map_btbs",

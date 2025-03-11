@@ -1,6 +1,9 @@
 [
   {
     "name": "BotRT",
+    "access_rules": [
+      "portal-bridgeontheriverty"
+    ],
     "map_locations": [
       {
         "map": "map_botrt",

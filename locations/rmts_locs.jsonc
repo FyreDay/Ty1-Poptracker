@@ -1,6 +1,9 @@
 [
   {
     "name": "RMtS",
+    "access_rules": [
+      "portal-rexmarksthespot"
+    ],
     "map_locations": [
       {
         "map": "map_rmts",

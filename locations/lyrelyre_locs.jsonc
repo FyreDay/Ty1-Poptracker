@@ -1,6 +1,9 @@
 [
   {
     "name": "LLPoF",
+    "access_rules": [
+      "portal-lyrelyrepantsonfire"
+    ],
     "map_locations": [
       {
         "map": "map_llpof",

@@ -1,6 +1,9 @@
 [
   {
     "name": "Outback Safari",
+    "access_rules": [
+      "portal-outbacksafari"
+    ],
     "map_locations": [
       {
         "map": "map_outback_safari",
