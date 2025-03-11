@@ -13,6 +13,9 @@
     ],
     "sections": [
       {
+        "visibility_rules": [
+          "sign_sanity"
+        ],
         "name": "Signpost 1",
         "item_count": 1,
         "chest_unopened_img": "images/items/sign.png",
@@ -375,6 +378,9 @@
         "access_rules": [],
         "sections": [
           {
+            "visibility_rules": [
+              "sign_sanity"
+            ],
             "name": "Signpost 2",
             "item_count": 1,
             "chest_unopened_img": "images/items/sign.png",
@@ -536,6 +542,9 @@
         ],
         "sections": [
           {
+            "visibility_rules": [
+              "sign_sanity"
+            ],
             "name": "Signpost 3",
             "item_count": 1,
             "chest_unopened_img": "images/items/sign.png",
