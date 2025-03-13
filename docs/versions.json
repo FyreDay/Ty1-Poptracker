@@ -1,6 +1,15 @@
 {
     "versions": [
         {
+            "package_version": "1.0.2",
+            "download_url": "https://github.com/FyreDay/Ty1-Poptracker/releases/download/v1.0.2/Ty1-Poptracker-v1.0.2.zip",
+            "sha256": "25452d5786c7d5dc04692a2df98bb6517f7f729fe1975f784987e76acf94ab3e",
+            "changelog": [
+                "Changed version to 1.0.2",
+                "Added Auto-update support"
+            ]
+        },
+        {
             "package_version": "1.0.1",
             "download_url": "https://github.com/FyreDay/Ty1-Poptracker/releases/download/v1.0.1/Ty1-Poptracker-v1.0.1.zip",
             "sha256": "919bcebac4d027d6f4b32aed119da55145c53d40e09d50b97f48fa1d1ae75154",
