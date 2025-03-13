@@ -1,0 +1,51 @@
+{
+    "type": "object",
+    "properties": {
+        "versions" : {
+            "description": "List of versions for the pack, ordered latest to oldest",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "package_version": {
+                        "type": "string"
+                    },
+                    "download_url": {
+                        "type": ["string", "null"],
+                        "format": "uri"
+                    },
+                    "sha256": {
+                        "description": "SHA256 of the download as hex chars without spaces",
+                        "type": "string",
+                        "minLength": 64,
+                        "maxLength": 64
+                    },
+                    "changelog": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": [
+                    "package_version",
+                    "download_url",
+                    "changelog"
+                ],
+                "oneOf": [
+                    {
+                        "properties": {
+                            "download_url": {
+                                "type": "null"
+                            }
+                        }
+                    },
+                    {
+                        "required": ["sha256"]
+                    }
+                ]
+            }
+        }
+    },
+    "required": [ "versions" ]
+}
