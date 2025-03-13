@@ -217,6 +217,38 @@ function A1mainthegg()
     return has("a1thegg") and not has("gateTimeAttacks")
 end
 
+function A2mainthegg()
+    return has("a2thegg") and not has("gateTimeAttacks")
+end
+
+function A3mainthegg()
+    return has("a3thegg") and not has("gateTimeAttacks")
+end
+
+function B1mainthegg()
+    return has("b1thegg") and not has("gateTimeAttacks")
+end
+
+function B2mainthegg()
+    return has("b2thegg") and not has("gateTimeAttacks")
+end
+
+function B3mainthegg()
+    return has("b3thegg") and not has("gateTimeAttacks")
+end
+
+function C1mainthegg()
+    return has("c1thegg") and not has("gateTimeAttacks")
+end
+
+function C2mainthegg()
+    return has("c2thegg") and not has("gateTimeAttacks")
+end
+
+function C3mainthegg()
+    return has("c3thegg") and not has("gateTimeAttacks")
+end
+
 function Not(item)
     return not has(item)
 end

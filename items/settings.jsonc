@@ -132,7 +132,56 @@
     {
         "name": "A1 Main Thegg",
         "type": "toggle",
-        "img": "images/items/thegg.png",
+        "img": "images/items/thunderegg.png",
         "codes": "a1thegg"
       },
+      {
+        "name": "A2 Main Thegg",
+        "type": "toggle",
+        "img": "images/items/thunderegg.png",
+        "codes": "a2thegg"
+      },
+      {
+        "name": "A3 Main Thegg",
+        "type": "toggle",
+        "img": "images/items/thunderegg.png",
+        "codes": "a3thegg"
+      },
+      {
+        "name": "B1 Main Thegg",
+        "type": "toggle",
+        "img": "images/items/thunderegg.png",
+        "codes": "b1thegg"
+      },
+      {
+        "name": "B2 Main Thegg",
+        "type": "toggle",
+        "img": "images/items/thunderegg.png",
+        "codes": "b2thegg"
+      },
+      {
+        "name": "B3 Main Thegg",
+        "type": "toggle",
+        "img": "images/items/thunderegg.png",
+        "codes": "b3thegg"
+      },
+      {
+        "name": "C1 Main Thegg",
+        "type": "toggle",
+        "img": "images/items/thunderegg.png",
+        "codes": "c1thegg"
+      },
+      {
+        "name": "C2 Main Thegg",
+        "type": "toggle",
+        "img": "images/items/thunderegg.png",
+        "codes": "c2thegg"
+      },
+      {
+        "name": "C3 Main Thegg",
+        "type": "toggle",
+        "img": "images/items/thunderegg.png",
+        "codes": "c3thegg"
+      },
+
 ]

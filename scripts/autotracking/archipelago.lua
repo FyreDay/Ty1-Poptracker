@@ -314,8 +314,32 @@ function onLocation(location_id, location_name)
                 location_obj.Active = true
             end
 
-            if location_id == 141885699 then
+            if location == "@Two Up/End/Glide The Gap" then
                 Tracker:FindObjectForCode("a1thegg").Active = true
+            end
+            if location == "@WitP/End/Truck Trouble" then
+                Tracker:FindObjectForCode("a2thegg").Active = true
+            end
+            if location == "@Ship Rex/Main/Spire/Where's Elle?" then
+                Tracker:FindObjectForCode("a4thegg").Active = true
+            end
+            if location == "@BotRT/Upper/Home, Sweet, Home" then
+                Tracker:FindObjectForCode("b1thegg").Active = true
+            end
+            if location == "@Snow Worries/Koala Chaos" then
+                Tracker:FindObjectForCode("b2thegg").Active = true
+            end
+            if location == "@Outback Safari/Shazza Loop/Emu Roundup" then
+                Tracker:FindObjectForCode("b3thegg").Active = true
+            end
+            if location == "@LLPoF/End/Lenny The Lyrebird" then
+                Tracker:FindObjectForCode("c1thegg").Active = true
+            end
+            if location == "@BtBS/Koala Crisis" then
+                Tracker:FindObjectForCode("c2thegg").Active = true
+            end
+            if location == "@RMtS/Skull Island/Treasure Hunt" then
+                Tracker:FindObjectForCode("c3thegg").Active = true
             end
         else
             print(string.format("onLocation: could not find location_object for code %s", location))

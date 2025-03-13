@@ -14,8 +14,9 @@
         "sections": [
             {
                 "access_rules": [
-                    "stopwatch-shiprex,[swim]",
-                    "stopwatch-shiprex,[dive]"
+                    "gateTimeAttacks,stopwatch-shiprex,[swim]",
+                    "gateTimeAttacks,stopwatch-shiprex,[dive]",
+                    "$A3mainthegg"
                 ],
                 "name": "Race Rex",
                 "item_count": 1,
@@ -93,6 +94,9 @@
                 "access_rules": [],
                 "sections": [
                     {
+                        "access_rules": [
+                            "{portal-shiprex}"
+                        ],
                         "name": "Bilby Completion",
                         "item_count": 1,
                         "chest_unopened_img": "images/items/bilby.png",
@@ -124,8 +128,13 @@
                         "chest_opened_img": "images/items/pictureframe_grey.png"
                     },
                     {
+                        "visibility_rules": [
+                            "gateTimeAttacks"
+                        ],
                         "access_rules": [
-                            "stopwatch-shiprex"
+                            "gateTimeAttacks,stopwatch-shiprex,[swim]",
+                            "gateTimeAttacks,stopwatch-shiprex,[dive]",
+                            "$A3mainthegg"
                         ],
                         "name": "Time Attack Challenge",
                         "item_count": 1,

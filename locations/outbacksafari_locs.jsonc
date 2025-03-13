@@ -24,6 +24,9 @@
         "access_rules": [],
         "sections": [
           {
+            "access_rules": [
+              "{portal-outbacksafari}"
+            ],
             "name": "Bilby Completion",
             "item_count": 1,
             "chest_unopened_img": "images/items/bilby.png",
@@ -42,8 +45,12 @@
             "chest_opened_img": "images/items/goldencog_grey.png"
           },
           {
+            "visibility_rules": [
+              "gateTimeAttacks"
+            ],
             "access_rules": [
-              "stopwatch-outbacksafari"
+              "gateTimeAttacks,stopwatch-outbacksafari",
+              "$B3mainthegg"
             ],
             "name": "Time Attack Challenge",
             "item_count": 1,
@@ -89,7 +96,8 @@
           },
           {
             "access_rules": [
-              "stopwatch-outbacksafari"
+              "gateTimeAttacks,stopwatch-outbacksafari",
+              "$B3mainthegg"
             ],
             "name": "Race Shazza",
             "item_count": 1,
