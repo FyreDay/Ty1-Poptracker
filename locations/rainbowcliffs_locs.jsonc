@@ -295,7 +295,7 @@
           },
           {
             "access_rules": [
-              "portal-crikey'scove"
+              "portal-crikey'scove,swim,aquarang","portal-crikey'scove,dive,aquarang"
             ],
             "name": "Platypus Talisman",
             "item_count": 1,
@@ -353,7 +353,7 @@
           },
           {
             "access_rules": [
-              "portal-fluffy'sfjord"
+              "portal-fluffy'sfjord,flamerang,frostyrang"
             ],
             "name": "Cockatoo Talisman",
             "item_count": 1,
