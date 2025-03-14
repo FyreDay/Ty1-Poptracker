@@ -103,12 +103,18 @@
                         "chest_opened_img": "images/items/bilby_grey.png"
                     },
                     {
+                        "access_rules": [
+                            "{portal-shiprex}"
+                        ],
                         "name": "Find 5 Bilbies",
                         "item_count": 1,
                         "chest_unopened_img": "images/items/bilby.png",
                         "chest_opened_img": "images/items/bilby_grey.png"
                     },
                     {
+                        "access_rules": [
+                            "{portal-shiprex}"
+                        ],
                         "name": "All Golden Cogs",
                         "item_count": 1,
                         "chest_unopened_img": "images/items/goldencog.png",
@@ -271,9 +277,6 @@
                                 "chest_opened_img": "images/items/goldencog_grey.png"
                             },
                             {
-                                "access_rules": [
-                                    "secondrang"
-                                ],
                                 "name": "Golden Cog 5",
                                 "item_count": 1,
                                 "chest_unopened_img": "images/items/goldencog.png",
@@ -412,9 +415,6 @@
                                 "chest_opened_img": "images/items/goldencog_grey.png"
                             },
                             {
-                                "access_rules": [
-                                    "[secondrang]"
-                                ],
                                 "name": "Golden Cog 9",
                                 "item_count": 1,
                                 "chest_unopened_img": "images/items/goldencog.png",
@@ -433,6 +433,10 @@
                                 "chest_opened_img": "images/items/thunderegg_grey.png"
                             },
                             {
+                                "access_rules": [
+                                    "swim",
+                                    "dive"
+                                ],
                                 "name": "Collect 300 Opals",
                                 "item_count": 1,
                                 "chest_unopened_img": "images/items/thunderegg.png",

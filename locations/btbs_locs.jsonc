@@ -20,7 +20,8 @@
       },
       {
         "access_rules": [
-          "flamerang"
+          "flamerang",
+          "kaboomerang"
         ],
         "name": "Golden Cog 7",
         "item_count": 1,
@@ -53,6 +54,15 @@
       },
       {
         "access_rules": [
+          "flamerang"
+        ],
+        "name": "Bilby Mum",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/bilby.png",
+        "chest_opened_img": "images/items/bilby_grey.png"
+      },
+      {
+        "access_rules": [
           "frostyrang"
         ],
         "name": "Koala Crisis",
@@ -71,6 +81,9 @@
         "chest_opened_img": "images/items/thunderegg_grey.png"
       },
       {
+        "access_rules": [
+          "secondrang"
+        ],
         "name": "Collect 300 Opals",
         "item_count": 1,
         "chest_unopened_img": "images/items/thunderegg.png",
@@ -180,6 +193,32 @@
         "chest_unopened_img": "images/items/pictureframe.png",
         "chest_opened_img": "images/items/pictureframe_grey.png"
       },
+      {
+        "visibility_rules": [
+          "frames_per_level",
+          "frames_on"
+        ],
+        "access_rules": [
+          "^$frameInfraRule"
+        ],
+        "name": "PF 18",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/pictureframe.png",
+        "chest_opened_img": "images/items/pictureframe_grey.png"
+      },
+      {
+        "visibility_rules": [
+          "frames_per_level",
+          "frames_on"
+        ],
+        "access_rules": [
+          "^$frameInfraRule"
+        ],
+        "name": "PF 25",
+        "item_count": 1,
+        "chest_unopened_img": "images/items/pictureframe.png",
+        "chest_opened_img": "images/items/pictureframe_grey.png"
+      }
     ],
     "children": [
       {
@@ -203,12 +242,18 @@
             "chest_opened_img": "images/items/bilby_grey.png"
           },
           {
+            "access_rules": [
+              "flamerang,{portal-beyondtheblackstump}"
+            ],
             "name": "Find 5 Bilbies",
             "item_count": 1,
             "chest_unopened_img": "images/items/bilby.png",
             "chest_opened_img": "images/items/bilby_grey.png"
           },
           {
+            "access_rules": [
+              "{portal-beyondtheblackstump}"
+            ],
             "name": "All Golden Cogs",
             "item_count": 1,
             "chest_unopened_img": "images/items/goldencog.png",
@@ -250,7 +295,7 @@
             "y": 2300
           }
         ],
-        "access_rules": [],
+        "access_rules": ["secondrang"],
         "sections": [
           {
             "visibility_rules": [
@@ -274,13 +319,10 @@
             "chest_opened_img": "images/items/goldencog_grey.png"
           },
           {
+            "access_rules": [
+              "flamerang"
+            ],
             "name": "Bilby Dad",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/bilby.png",
-            "chest_opened_img": "images/items/bilby_grey.png"
-          },
-          {
-            "name": "Bilby Mum",
             "item_count": 1,
             "chest_unopened_img": "images/items/bilby.png",
             "chest_opened_img": "images/items/bilby_grey.png"
@@ -303,19 +345,7 @@
             "chest_unopened_img": "images/items/thunderegg.png",
             "chest_opened_img": "images/items/thunderegg_grey.png"
           },
-          {
-            "visibility_rules": [
-              "frames_per_level",
-              "frames_on"
-            ],
-            "access_rules": [
-              "^$frameInfraRule"
-            ],
-            "name": "PF 18",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/pictureframe.png",
-            "chest_opened_img": "images/items/pictureframe_grey.png"
-          },
+          
           {
             "visibility_rules": [
               "frames_per_level",
@@ -393,20 +423,7 @@
             "item_count": 1,
             "chest_unopened_img": "images/items/pictureframe.png",
             "chest_opened_img": "images/items/pictureframe_grey.png"
-          },
-          {
-            "visibility_rules": [
-              "frames_per_level",
-              "frames_on"
-            ],
-            "access_rules": [
-              "^$frameInfraRule"
-            ],
-            "name": "PF 25",
-            "item_count": 1,
-            "chest_unopened_img": "images/items/pictureframe.png",
-            "chest_opened_img": "images/items/pictureframe_grey.png"
-          },
+          }
         ]
       },
       {
@@ -418,7 +435,7 @@
             "y": 1200
           }
         ],
-        "access_rules": [],
+        "access_rules": ["secondrang"],
         "sections": [
           {
             "name": "Golden Cog 10",
@@ -560,7 +577,7 @@
             "y": 900
           }
         ],
-        "access_rules": [],
+        "access_rules": ["secondrang"],
         "sections": [
           {
             "name": "Golden Cog 2",

@@ -139,12 +139,18 @@
                         "chest_opened_img": "images/items/bilby_grey.png"
                     },
                     {
+                        "access_rules": [
+                            "{portal-walkinthepark}"
+                        ],
                         "name": "Find 5 Bilbies",
                         "item_count": 1,
                         "chest_unopened_img": "images/items/bilby.png",
                         "chest_opened_img": "images/items/bilby_grey.png"
                     },
                     {
+                        "access_rules": [
+                            "{portal-walkinthepark}"
+                        ],
                         "name": "All Golden Cogs",
                         "item_count": 1,
                         "chest_unopened_img": "images/items/goldencog.png",
