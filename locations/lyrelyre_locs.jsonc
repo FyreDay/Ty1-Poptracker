@@ -176,8 +176,7 @@
           },
           {
             "visibility_rules": [
-              "frames_per_level",
-              "frames_on"
+              "frames_per_level"
             ],
             "access_rules": [
               "^$frameInfraRule"
