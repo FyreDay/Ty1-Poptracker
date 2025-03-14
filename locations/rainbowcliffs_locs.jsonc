@@ -294,7 +294,7 @@
           },
           {
             "access_rules": [
-              "portal-crikey'scove,swim,aquarang","portal-crikey'scove,dive,aquarang"
+              "portal-crikey'scove,swim,aquarang,flamerang","portal-crikey'scove,dive,aquarang,flamerang"
             ],
             "name": "Platypus Talisman",
             "item_count": 1,
