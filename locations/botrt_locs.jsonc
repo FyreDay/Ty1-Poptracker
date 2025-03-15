@@ -100,6 +100,9 @@
         "chest_opened_img": "images/items/pictureframe_grey.png"
       },
       {
+        "access_rules": [
+          "secondrang"
+        ],
         "name": "Golden Cog 1",
         "item_count": 1,
         "chest_unopened_img": "images/items/goldencog.png",
@@ -373,6 +376,9 @@
             "y": 2700
           }
         ],
+        "access_rules": [
+          "[secondrang]"
+        ],
         "sections": [
           {
             "visibility_rules": [
@@ -514,6 +520,9 @@
             "chest_opened_img": "images/items/pictureframe_grey.png"
           },
           {
+            "access_rules": [
+              "secondrang"
+            ],
             "name": "Golden Cog 6",
             "item_count": 1,
             "chest_unopened_img": "images/items/goldencog.png",
