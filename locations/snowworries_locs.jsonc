@@ -159,7 +159,7 @@
               "frames_per_level"
             ],
             "access_rules": [
-              "^$frameInfraRule"
+              "^$frameInfraRule","frames_per_level"
             ],
             "name": "All Picture Frames",
             "item_count": 1,

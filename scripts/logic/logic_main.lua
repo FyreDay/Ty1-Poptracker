@@ -166,9 +166,15 @@ end
 
 function frameInfraRule()
     if not has("frames_require_infra") then
+        if has("frames_per_level") then
+            return AccessibilityLevel.Inspect
+        end
         return AccessibilityLevel.Normal
     end
     if not has("infrarang") then
+        if has("frames_per_level") then
+            return AccessibilityLevel.Inspect
+        end
         return AccessibilityLevel.SequenceBreak
     end
     return AccessibilityLevel.Normal

@@ -189,7 +189,7 @@
               "frames_per_level"
             ],
             "access_rules": [
-              "^$frameInfraRule,flamerang,frostyrang,zappyrang"
+              "^$frameInfraRule,flamerang,frostyrang,zappyrang","frames_per_level,flamerang,frostyrang,zappyrang"
             ],
             "name": "All Picture Frames",
             "item_count": 1,
