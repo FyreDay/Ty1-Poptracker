@@ -80,7 +80,7 @@
       },
       {
         "access_rules": [
-          "gateTimeAttacks,stopwatch-lyrepantsonfire",
+          "gateTimeAttacks,stopwatch-lyrelyrepantsonfire",
           "$C1mainthegg"
         ],
         "name": "Time Attack",
@@ -197,7 +197,7 @@
               "gateTimeAttacks"
             ],
             "access_rules": [
-              "gateTimeAttacks,stopwatch-lyrepantsonfire",
+              "gateTimeAttacks,stopwatch-lyrelyrepantsonfire",
               "$C1mainthegg"
             ],
             "name": "Time Attack Challenge",

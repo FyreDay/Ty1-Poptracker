@@ -394,7 +394,7 @@
     "name": "stopwatch-lyre,lyrepantsonfire",
     "type": "toggle",
     "img": "images/items/stopwatch.png",
-    "codes": "stopwatch-lyre,lyrepantsonfire"
+    "codes": "stopwatch-lyrelyrepantsonfire"
   },
   {
     "name": "stopwatch-beyondtheblackstump",
