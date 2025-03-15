@@ -440,6 +440,17 @@ function updateHints(locationID, clear)
     end
 end
 
+--wishful thinking
+-- function onMapChange(key, value, old)
+--     print("got  " .. key .. " = " .. tostring(value) .. " (was " .. tostring(old) .. ")")
+--     print(dump_table(MAP_MAPPING[tostring(value)]))
+--     if has("automap_on") then
+--     tabs = MAP_MAPPING[tostring(value)]
+--     for i, tab in ipairs(tabs) do
+--         Tracker:UiHint("ActivateTab", tab)
+--         end
+--     end
+-- end
 
 -- ScriptHost:AddWatchForCode("settings autofill handler", "autofill_settings", autoFill)
 Archipelago:AddClearHandler("clear handler", onClearHandler)
@@ -449,7 +460,8 @@ Archipelago:AddLocationHandler("location handler", onLocation)
 Archipelago:AddSetReplyHandler("notify handler", onNotify)
 Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
 
-
+-- Archipelago:AddSetReplyHandler("map_key", onMapChange)
+-- Archipelago:AddRetrievedHandler("map_key", onMapChange)
 
 --doc
 --hint layout
