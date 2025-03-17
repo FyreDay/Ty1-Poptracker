@@ -125,7 +125,7 @@
                             "frames_per_level"
                         ],
                         "access_rules": [
-                            "^$frameInfraRule","frames_per_level"
+                            "^$frameInfraRule,swim,aquarang","^$frameInfraRule,dive,aquarang","frames_per_level,swim,aquarang","frames_per_level,dive,aquarang"
                         ],
                         "name": "All Picture Frames",
                         "item_count": 1,

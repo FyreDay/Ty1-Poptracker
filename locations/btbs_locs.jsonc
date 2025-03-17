@@ -264,7 +264,7 @@
               "frames_per_level"
             ],
             "access_rules": [
-              "^$frameInfraRule","frames_per_level"
+              "^$frameInfraRule,frostyrang","frames_per_level,frostyrang"
             ],
             "name": "All Picture Frames",
             "item_count": 1,

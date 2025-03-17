@@ -48,7 +48,7 @@
                             "frames_per_level"
                         ],
                         "access_rules": [
-                            "^$frameInfraRule","frames_per_level"
+                            "^$frameInfraRule,secondrang","frames_per_level,secondrang"
                         ],
                         "name": "All Picture Frames",
                         "item_count": 1,
