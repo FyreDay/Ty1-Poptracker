@@ -33,7 +33,7 @@ Tracker:AddLocations("locations/outbacksafari_locs.jsonc")
 Tracker:AddLocations("locations/lyrelyre_locs.jsonc")
 Tracker:AddLocations("locations/btbs_locs.jsonc")
 Tracker:AddLocations("locations/rmts_locs.jsonc")
-
+Tracker:AddLocations("locations/entrance_locs.jsonc")
 Tracker:AddLocations("locations/other_locs.jsonc")
 -- AutoTracking for Poptracker
 if PopVersion and PopVersion >= "0.26.0" then

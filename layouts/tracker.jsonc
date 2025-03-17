@@ -54,6 +54,15 @@
           "type": "tabbed",
           "tabs": [
             {
+              "title": "Entrances",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "map_entrance_cliffs"
+                ]
+              }
+            },
+            {
               "title": "Rainbow Cliffs",
               "content": {
                 "type": "map",
@@ -204,6 +213,15 @@
         {
           "type": "tabbed",
           "tabs": [
+            {
+              "title": "Entrances",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "map_entrance_cliffs"
+                ]
+              }
+            },
             {
               "title": "Rainbow Cliffs",
               "content": {

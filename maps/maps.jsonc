@@ -1,6 +1,12 @@
 [
   //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#maps
   {
+    "name": "map_entrance_cliffs",
+    "location_size": 32,
+    "location_border_thickness": 1,
+    "img": "images/maps/entrance_cliffs.png"
+  },
+  {
     "name": "map_rainbow_cliffs",
     "location_size": 32,
     "location_border_thickness": 1,

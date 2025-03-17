@@ -63,13 +63,13 @@
   {
     "name": "Swim",
     "type": "toggle",
-    "img": "images/items/aquarang.png",
+    "img": "images/items/seahorse.png",
     "codes": "swim"
   },
   {
     "name": "Dive",
     "type": "toggle",
-    "img": "images/items/aquarang.png",
+    "img": "images/items/seahorse.png",
     "codes": "dive"
   },
   {
