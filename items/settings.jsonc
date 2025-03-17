@@ -48,7 +48,7 @@
         "codes": "frames_require_infra"
     },
     {
-        "name": "Cogs Required for each Technorang",
+        "name": "Technorang Cost",
         "type": "consumable",
         "max_quantity": 15,
         "increment": 1,
@@ -60,7 +60,7 @@
         "codes": "cogGating"
     },
     {
-        "name": "Thundereggs required for Boss and/or Elemental checks",
+        "name": "Boss Thunderegg Requirement",
         "type": "consumable",
         "max_quantity": 24,
         "increment": 1,

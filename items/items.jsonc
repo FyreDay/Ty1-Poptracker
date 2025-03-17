@@ -295,7 +295,7 @@
     "codes": "portal-shiprex"
   },
   {
-    "name": "portal-bull'spen",
+    "name": "Bull's Pen",
     "type": "toggle",
     "img": "images/items/portal.png",
     "codes": "portal-bull'spen"
@@ -319,7 +319,7 @@
     "codes": "portal-outbacksafari"
   },
   {
-    "name": "portal-crikey'scove",
+    "name": "Crikey's Cove",
     "type": "toggle",
     "img": "images/items/portal.png",
     "codes": "portal-crikey'scove"
@@ -343,13 +343,13 @@
     "codes": "portal-rexmarksthespot"
   },
   {
-    "name": "portal-fluffy'sfjord",
+    "name": "Fluffy's Fjord",
     "type": "toggle",
     "img": "images/items/portal.png",
     "codes": "portal-fluffy'sfjord"
   },
   {
-    "name": "portal-cass'pass",
+    "name": "Cass' Pass",
     "type": "toggle",
     "img": "images/items/portal.png",
     "codes": "portal-cass'pass"
