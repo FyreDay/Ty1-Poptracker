@@ -134,7 +134,7 @@
         "stages": [
             {
                 "img": "images/settings/automap_on.png",
-                "name": "AutoMap On",
+                "name": "AutoMap On (TyAP-Client v1.1.10+)",
                 "codes": "automap,automap_on",
                 "inherit_codes": false
             },
