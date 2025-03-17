@@ -312,50 +312,55 @@ end
 function onLocation(location_id, location_name)
     local location_array = LOCATION_MAPPING[location_id]
     if not location_array or not location_array[1] then
-        print(string.format("onLocation: could not find location mapping for id %s", location_id))
+        print(string.format("onLocation: could not find location mapping for id %s", location_array[1]))
         return
     end
+    print(string.format("onLocation:  %s", dump_table(location_array)))
+    local location = location_array[1]
+    local counter = location_array[2]
 
-    for _, location in pairs(location_array) do
-        local location_obj = Tracker:FindObjectForCode(location)
-        -- print(location, location_obj)
-        if location_obj then
-            if location:sub(1, 1) == "@" then
-                location_obj.AvailableChestCount = location_obj.AvailableChestCount - 1
-            else
-                location_obj.Active = true
-            end
-
-            if location == "@Two Up/End/Glide The Gap" then
-                Tracker:FindObjectForCode("a1thegg").Active = true
-            end
-            if location == "@WitP/End/Truck Trouble" then
-                Tracker:FindObjectForCode("a2thegg").Active = true
-            end
-            if location == "@Ship Rex/Main/Spire/Where's Elle?" then
-                Tracker:FindObjectForCode("a4thegg").Active = true
-            end
-            if location == "@BotRT/Upper/Home, Sweet, Home" then
-                Tracker:FindObjectForCode("b1thegg").Active = true
-            end
-            if location == "@Snow Worries/Koala Chaos" then
-                Tracker:FindObjectForCode("b2thegg").Active = true
-            end
-            if location == "@Outback Safari/Shazza Loop/Emu Roundup" then
-                Tracker:FindObjectForCode("b3thegg").Active = true
-            end
-            if location == "@LLPoF/End/Lenny The Lyrebird" then
-                Tracker:FindObjectForCode("c1thegg").Active = true
-            end
-            if location == "@BtBS/Koala Crisis" then
-                Tracker:FindObjectForCode("c2thegg").Active = true
-            end
-            if location == "@RMtS/Skull Island/Treasure Hunt" then
-                Tracker:FindObjectForCode("c3thegg").Active = true
-            end
+    local location_obj = Tracker:FindObjectForCode(location)
+    if location_obj then
+        if location:sub(1, 1) == "@" then
+            location_obj.AvailableChestCount = location_obj.AvailableChestCount - 1
         else
-            print(string.format("onLocation: could not find location_object for code %s", location))
+            location_obj.Active = true
         end
+
+        if counter then
+            local item_obj = Tracker:FindObjectForCode(counter)
+            item_obj.AcquiredCount = item_obj.AcquiredCount + item_obj.Increment
+        end
+
+        if location == "@Two Up/End/Glide The Gap" then
+            Tracker:FindObjectForCode("a1thegg").Active = true
+        end
+        if location == "@WitP/End/Truck Trouble" then
+            Tracker:FindObjectForCode("a2thegg").Active = true
+        end
+        if location == "@Ship Rex/Main/Spire/Where's Elle?" then
+            Tracker:FindObjectForCode("a4thegg").Active = true
+        end
+        if location == "@BotRT/Upper/Home, Sweet, Home" then
+            Tracker:FindObjectForCode("b1thegg").Active = true
+        end
+        if location == "@Snow Worries/Koala Chaos" then
+            Tracker:FindObjectForCode("b2thegg").Active = true
+        end
+        if location == "@Outback Safari/Shazza Loop/Emu Roundup" then
+            Tracker:FindObjectForCode("b3thegg").Active = true
+        end
+        if location == "@LLPoF/End/Lenny The Lyrebird" then
+            Tracker:FindObjectForCode("c1thegg").Active = true
+        end
+        if location == "@BtBS/Koala Crisis" then
+            Tracker:FindObjectForCode("c2thegg").Active = true
+        end
+        if location == "@RMtS/Skull Island/Treasure Hunt" then
+            Tracker:FindObjectForCode("c3thegg").Active = true
+        end
+    else
+        print(string.format("onLocation: could not find location_object for code %s", location))
     end
 end
 

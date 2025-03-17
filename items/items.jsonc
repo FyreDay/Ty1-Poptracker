@@ -472,4 +472,59 @@
     "img": "images/items/opalmagnet.png",
     "codes": "opalmagnet"
   },
+  {
+    "name": "Knocked Down Trap",
+    "type": "consumable",
+    "max_quantity": 99,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "img": "images/items/opalmagnet.png",
+    "codes": "knockdowntrap"
+  },
+  {
+    "name": "Slow Trap",
+    "type": "consumable",
+    "max_quantity": 99,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "img": "images/items/opalmagnet.png",
+    "codes": "slowtrap"
+  },
+  {
+    "name": "Gravity Trap",
+    "type": "consumable",
+    "max_quantity": 99,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "img": "images/items/opalmagnet.png",
+    "codes": "gravitytrap"
+  },
+  {
+    "name": "Acid Trap",
+    "type": "consumable",
+    "max_quantity": 99,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "img": "images/items/opalmagnet.png",
+    "codes": "acidtrap"
+  },
+  {
+    "name": "Exit Trap",
+    "type": "consumable",
+    "max_quantity": 99,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "overlay_background": "#000000",
+    "img": "images/items/opalmagnet.png",
+    "codes": "exittrap"
+  }
 ]

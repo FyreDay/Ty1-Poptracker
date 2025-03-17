@@ -59,5 +59,10 @@ ITEM_MAPPING = {
 	[141885524] = {"tigertalisman", "toggle"},
 	[141885568] = {"pictureframe", "toggle"},
 	[141885570] = {"extralife", "consumable"},
-	[141885571] = {"opalmagnet", "toggle"},
+	[141885571] = {"opalmagnet", "consumable"},
+	[141885584] = {"knockdowntrap", "consumable"},
+	[141885585] = {"slowtrap", "consumable"},
+	[141885586] = {"gravitytrap", "consumable"},
+	[141885587] = {"acidtrap", "consumable"},
+	[141885588] = {"exittrap", "consumable"}
 }

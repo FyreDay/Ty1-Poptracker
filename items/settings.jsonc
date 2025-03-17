@@ -204,5 +204,41 @@
         "img": "images/items/thunderegg.png",
         "codes": "c3thegg"
       },
+      {
+        "name": "firetheggchecks",
+        "type": "consumable",
+        "max_quantity": 24,
+        "increment": 1,
+        "decrement": 1,
+        "initial_quantity": 0,
+        "overlay_background": "#000000",
+        "overlay_font_size": 8,
+        "img": "images/items/thunderegg.png",
+        "codes": "firetheggchecks"
+      },
+      {
+        "name": "icetheggchecks",
+        "type": "consumable",
+        "max_quantity": 24,
+        "increment": 1,
+        "decrement": 1,
+        "initial_quantity": 0,
+        "overlay_background": "#000000",
+        "overlay_font_size": 8,
+        "img": "images/items/thunderegg.png",
+        "codes": "icetheggchecks"
+      },
+      {
+        "name": "airtheggchecks",
+        "type": "consumable",
+        "max_quantity": 24,
+        "increment": 1,
+        "decrement": 1,
+        "initial_quantity": 0,
+        "overlay_background": "#000000",
+        "overlay_font_size": 8,
+        "img": "images/items/thunderegg.png",
+        "codes": "airtheggchecks"
+      }
 
 ]
