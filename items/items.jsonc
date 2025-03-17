@@ -409,31 +409,31 @@
     "codes": "stopwatch-rexmarksthespot"
   },
   {
-    "name": "frogtalisman",
+    "name": "Frog Talisman",
     "type": "toggle",
     "img": "images/items/talisman.png",
     "codes": "frogtalisman"
   },
   {
-    "name": "platypustalisman",
+    "name": "Platypus Talisman",
     "type": "toggle",
     "img": "images/items/talisman.png",
     "codes": "platypustalisman"
   },
   {
-    "name": "cockatootalisman",
+    "name": "Cockatoo Talisman",
     "type": "toggle",
     "img": "images/items/talisman.png",
     "codes": "cockatootalisman"
   },
   {
-    "name": "dingotalisman",
+    "name": "Dingo Talisman",
     "type": "toggle",
     "img": "images/items/talisman.png",
     "codes": "dingotalisman"
   },
   {
-    "name": "tigertalisman",
+    "name": "Tiger Talisman",
     "type": "toggle",
     "img": "images/items/talisman.png",
     "codes": "tigertalisman"
