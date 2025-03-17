@@ -297,7 +297,7 @@
   {
     "name": "Bull's Pen",
     "type": "toggle",
-    "img": "images/items/portal.png",
+    "img": "images/items/portal_boss.png",
     "codes": "portal-bull'spen"
   },
   {
@@ -321,7 +321,7 @@
   {
     "name": "Crikey's Cove",
     "type": "toggle",
-    "img": "images/items/portal.png",
+    "img": "images/items/portal_boss.png",
     "codes": "portal-crikey'scove"
   },
   {
@@ -345,7 +345,7 @@
   {
     "name": "Fluffy's Fjord",
     "type": "toggle",
-    "img": "images/items/portal.png",
+    "img": "images/items/portal_boss.png",
     "codes": "portal-fluffy'sfjord"
   },
   {

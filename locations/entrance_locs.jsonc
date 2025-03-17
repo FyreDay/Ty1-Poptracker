@@ -238,8 +238,8 @@
         "access_rules": ["secondrang"],
         "sections": [
             {
-                "chest_unopened_img": "images/items/portal.png",
-                "chest_opened_img": "images/items/portal.png",
+                "chest_unopened_img": "images/items/portal_boss.png",
+                "chest_opened_img": "images/items/portal_boss.png",
                 "name": "Bull's Pen",
                 "item_count": 1,
                 "visibility_rules": [ "portal-bull'spen"]
@@ -486,8 +486,8 @@
         "access_rules": ["flamerang"],
         "sections": [
             {
-                "chest_unopened_img": "images/items/portal.png",
-                "chest_opened_img": "images/items/portal.png",
+                "chest_unopened_img": "images/items/portal_boss.png",
+                "chest_opened_img": "images/items/portal_boss.png",
                 "name": "Crikey's Cove",
                 "item_count": 1,
                 "visibility_rules": [ "portal-crikey'scove"]
@@ -734,8 +734,8 @@
         "access_rules": ["frostyrang"],
         "sections": [
             {
-                "chest_unopened_img": "images/items/portal.png",
-                "chest_opened_img": "images/items/portal.png",
+                "chest_unopened_img": "images/items/portal_boss.png",
+                "chest_opened_img": "images/items/portal_boss.png",
                 "name": "Fluffy's Fjord",
                 "item_count": 1,
                 "visibility_rules": [ "portal-fluffy'sfjord"]
