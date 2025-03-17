@@ -161,7 +161,7 @@
                 "item_count": 1,
                 "chest_unopened_img": "images/items/life.png",
                 "chest_opened_img": "images/items/life_grey.png"
-            },
+            }
         ]
     }
 ]

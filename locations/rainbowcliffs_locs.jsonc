@@ -574,7 +574,7 @@
             "item_count": 1,
             "chest_unopened_img": "images/items/zappyrang.png",
             "chest_opened_img": "images/items/boomerang_grey.png"
-          },
+          }
         ],
         "map_locations": [
           {

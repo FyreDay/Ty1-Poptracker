@@ -264,7 +264,8 @@
               "frames_per_level"
             ],
             "access_rules": [
-              "^$frameInfraRule,frostyrang","frames_per_level,frostyrang"
+              "^$frameInfraRule,frostyrang",
+              "frames_per_level,frostyrang"
             ],
             "name": "All Picture Frames",
             "item_count": 1,
@@ -295,7 +296,9 @@
             "y": 2300
           }
         ],
-        "access_rules": ["secondrang"],
+        "access_rules": [
+          "secondrang"
+        ],
         "sections": [
           {
             "visibility_rules": [
@@ -345,7 +348,6 @@
             "chest_unopened_img": "images/items/thunderegg.png",
             "chest_opened_img": "images/items/thunderegg_grey.png"
           },
-          
           {
             "visibility_rules": [
               "frames_per_level",
@@ -435,7 +437,9 @@
             "y": 1200
           }
         ],
-        "access_rules": ["secondrang"],
+        "access_rules": [
+          "secondrang"
+        ],
         "sections": [
           {
             "name": "Golden Cog 10",
@@ -565,7 +569,7 @@
             "item_count": 1,
             "chest_unopened_img": "images/items/pictureframe.png",
             "chest_opened_img": "images/items/pictureframe_grey.png"
-          },
+          }
         ]
       },
       {
@@ -577,7 +581,9 @@
             "y": 900
           }
         ],
-        "access_rules": ["secondrang"],
+        "access_rules": [
+          "secondrang"
+        ],
         "sections": [
           {
             "name": "Golden Cog 2",
@@ -654,7 +660,7 @@
             "item_count": 1,
             "chest_unopened_img": "images/items/pictureframe.png",
             "chest_opened_img": "images/items/pictureframe_grey.png"
-          },
+          }
         ]
       }
     ]

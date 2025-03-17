@@ -454,7 +454,7 @@
                                 "item_count": 1,
                                 "chest_unopened_img": "images/items/pictureframe.png",
                                 "chest_opened_img": "images/items/pictureframe_grey.png"
-                            },
+                            }
                         ]
                     }
                 ]
