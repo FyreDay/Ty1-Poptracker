@@ -1,0 +1,111 @@
+{
+    "layout_maps": {
+      "type": "container",
+      "content": [
+        {
+            "type": "tabbed",
+            "tabs": [
+              {
+                "title": "Entrances",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "map_entrance_cliffs"
+                  ]
+                }
+              },
+              {
+                "title": "Rainbow Cliffs",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "map_rainbow_cliffs"
+                  ]
+                }
+              },
+              {
+                "title": "Two Up",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "map_twoup"
+                  ]
+                }
+              },
+              {
+                "title": "Walk In The Park",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "map_witp"
+                  ]
+                }
+              },
+              {
+                "title": "Ship Rex",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "map_ship_rex"
+                  ]
+                }
+              },
+              {
+                "title": "Bridge on the River Ty",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "map_botrt"
+                  ]
+                }
+              },
+              {
+                "title": "Snow Worries",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "map_snow_worries"
+                  ]
+                }
+              },
+              {
+                "title": "Outback Safari",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "map_outback_safari"
+                  ]
+                }
+              },
+              {
+                "title": "Lyre, Lyre Pants on Fire",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "map_llpof"
+                  ]
+                }
+              },
+              {
+                "title": "Beyond the Black Stump",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "map_btbs"
+                  ]
+                }
+              },
+              {
+                "title": "Rex Marks the Spot",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "map_rmts"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+    }
+}
