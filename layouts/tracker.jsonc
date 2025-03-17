@@ -24,8 +24,8 @@
             },
             {
               "type": "group",
-              "dock": "bottom",
-              "header": "Settings",
+              "dock": "center",
+              "header": "Yaml Settings",
               "margin": "0,0,3,0",
               "content": [
                 {
@@ -33,6 +33,20 @@
                   "key": "settings_grid"
                 }
               ]
+          },
+          {
+            "type": "group",
+            "header": "Tracker settings",
+            "dock": "bottom",
+            "margin": "0,0,3,0",
+            "content": [
+              {
+                "type": "layout",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "key": "pop_settings_grid"
+              }
+            ]
           }
           ]
         },
@@ -159,8 +173,8 @@
             },
             {
               "type": "group",
-              "header": "Settings",
-              "dock": "right",
+              "header": "Yaml Settings",
+              "dock": "center",
               "margin": "0,0,3,0",
               "content": [
                 {
@@ -168,6 +182,20 @@
                   "h_alignment": "center",
                   "v_alignment": "center",
                   "key": "settings_grid"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "header": "Tracker settings",
+              "dock": "right",
+              "margin": "0,0,3,0",
+              "content": [
+                {
+                  "type": "layout",
+                  "h_alignment": "center",
+                  "v_alignment": "center",
+                  "key": "pop_settings_grid"
                 }
               ]
             }

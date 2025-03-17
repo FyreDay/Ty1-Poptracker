@@ -3,6 +3,7 @@
 -- Tracker:AddLayouts("layouts/settings_popup.json")
 Tracker:AddLayouts("layouts/items.jsonc")
 Tracker:AddLayouts("layouts/settings.jsonc")
+Tracker:AddLayouts("layouts/popsettings.jsonc")
 -- Tracker:AddLayouts("layouts/tabs.json")
 Tracker:AddLayouts("layouts/tracker.jsonc")
 Tracker:AddLayouts("layouts/broadcast.jsonc")

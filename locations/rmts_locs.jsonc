@@ -134,6 +134,9 @@
             "chest_opened_img": "images/items/bilby_grey.png"
           },
           {
+            "access_rules": [
+              "swim","dive"
+            ],
             "name": "Treasure Hunt",
             "item_count": 1,
             "chest_unopened_img": "images/items/thunderegg.png",

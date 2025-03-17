@@ -14,6 +14,8 @@ RANDOMIZED_LEVELS = {
     
 }
 
+CUR_STAGE = ""
+
 function has_value (t, val)
     for i, v in ipairs(t) do
         if v == val then return 1 end
@@ -47,6 +49,14 @@ function forceUpdate()
 end
 
 function onClearHandler(slot_data)
+
+    if Archipelago.PlayerNumber > -1 then
+        CUR_STAGE = "ty1_level_"..Archipelago.TeamNumber.."_"..Archipelago:GetPlayerAlias(Archipelago.PlayerNumber)
+        
+        Archipelago:SetNotify({CUR_STAGE})
+        Archipelago:Get({CUR_STAGE})
+    end
+    -- print("data storage list", dump_table(data_storage_list))
     local clear_timer = os.clock()
     
     ScriptHost:RemoveWatchForCode("StateChange")
@@ -75,6 +85,8 @@ function onClearHandler(slot_data)
 end
 
 function onClear(slot_data)
+    print(string.format("playernumber: %s TeamNumber: %s alias: %s", Archipelago.PlayerNumber,Archipelago.TeamNumber,Archipelago:GetPlayerAlias(Archipelago.PlayerNumber)))
+
     --SLOT_DATA = slot_data
     CUR_INDEX = -1
     -- reset locations
@@ -402,6 +414,15 @@ function onNotify(key, value, old_value)
             end
         end
     end
+
+    -- print("got  " .. key .. " = " .. tostring(value) .. " (was " .. tostring(old) .. ")")
+    -- print(dump_table(LEVEL_MAPPING[tostring(value)]))
+    if key == CUR_STAGE and has("automap_on")  then
+        print(dump_table(LEVEL_MAPPING[value]))
+        local tab = LEVEL_MAPPING[value][3]
+        print(tab)
+        Tracker:UiHint("ActivateTab", tab)
+    end
 end
 
 function onNotifyLaunch(key, value)
@@ -419,11 +440,18 @@ function onNotifyLaunch(key, value)
             end
         end
     end
+
+    if key == CUR_STAGE and has("automap_on") then
+        print(dump_table(LEVEL_MAPPING[value]))
+        local tab = LEVEL_MAPPING[value][3]
+        print(tab)
+        Tracker:UiHint("ActivateTab", tab)
+    end
 end
 
 function updateHints(locationID, clear)
     local item_codes = HINTS_MAPPING[locationID]
-
+    
     for _, item_table in ipairs(item_codes, clear) do
         for _, item_code in ipairs(item_table) do
             local obj = Tracker:FindObjectForCode(item_code)
@@ -440,28 +468,20 @@ function updateHints(locationID, clear)
     end
 end
 
---wishful thinking
--- function onMapChange(key, value, old)
---     print("got  " .. key .. " = " .. tostring(value) .. " (was " .. tostring(old) .. ")")
---     print(dump_table(MAP_MAPPING[tostring(value)]))
---     if has("automap_on") then
---     tabs = MAP_MAPPING[tostring(value)]
---     for i, tab in ipairs(tabs) do
---         Tracker:UiHint("ActivateTab", tab)
---         end
---     end
--- end
+-- wishful thinking
+function onMapChange(key, value, old)
+    -- print("got  " .. key .. " = " .. tostring(value) .. " (was " .. tostring(old) .. ")")
+    -- print(dump_table(MAP_MAPPING[tostring(value)]))
+    
+end
 
--- ScriptHost:AddWatchForCode("settings autofill handler", "autofill_settings", autoFill)
+-- ScriptHost:AddWatchForCode("settings autofill handler", "autofill_settings", autoFill)s
 Archipelago:AddClearHandler("clear handler", onClearHandler)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
 
 Archipelago:AddSetReplyHandler("notify handler", onNotify)
 Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
-
--- Archipelago:AddSetReplyHandler("map_key", onMapChange)
--- Archipelago:AddRetrievedHandler("map_key", onMapChange)
 
 --doc
 --hint layout

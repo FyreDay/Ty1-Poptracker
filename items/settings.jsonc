@@ -125,6 +125,27 @@
     },
 
 
+    //POPtracker Settings
+    {
+        "name": "AutoMap Switching",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "images/settings/automap_on.png",
+                "name": "AutoMap On",
+                "codes": "automap,automap_on",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/settings/automap_off.png",
+                "name": "AutoMap Off",
+                "codes": "automap,automap_off",
+                "inherit_codes": false
+            }
+        ]
+    },
 
 
 
