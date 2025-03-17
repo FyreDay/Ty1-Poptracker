@@ -1,6 +1,16 @@
 {
     "versions": [
         {
+            "package_version": "1.0.3",
+            "download_url": "https://github.com/FyreDay/Ty1-Poptracker/releases/download/v1.0.3/Ty1-Poptracker-v1.0.3.zip",
+            "sha256": "ba5832fa262e9a4821e82834cd3fdb8fee61dcfef420007ecbf641e5fbb52dde",
+            "changelog": [
+                "Changed version to 1.0.3",
+                "Ty1-AP Client v1.1.10+ is required for full functionality",
+                "Added Auto Tab Support, Added Entrances Tab, and Fixed Logic Issues"
+            ]
+        },
+        {
             "package_version": "1.0.2",
             "download_url": "https://github.com/FyreDay/Ty1-Poptracker/releases/download/v1.0.2/Ty1-Poptracker-v1.0.2.zip",
             "sha256": "25452d5786c7d5dc04692a2df98bb6517f7f729fe1975f784987e76acf94ab3e",
