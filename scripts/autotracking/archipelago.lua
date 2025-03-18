@@ -151,7 +151,7 @@ function onClear(slot_data)
 
     if slot_data['PortalMap'] then
         local uls = Tracker:FindObjectForCode("levelunlockstyle")
-        local int i = 1;
+        local i = 1;
         for _,id in pairs(slot_data['PortalMap']) do
             local portal = Tracker:FindObjectForCode("portal"..i)
             portal.CurrentStage = LEVEL_MAPPING[id][2]
