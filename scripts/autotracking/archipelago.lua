@@ -86,7 +86,7 @@ function onClear(slot_data)
     end
     
     if slot_data == nil  then
-        print("welp")
+        print("Crikey!")
         return
     end
 
