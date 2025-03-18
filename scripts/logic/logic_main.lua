@@ -212,11 +212,11 @@ function zappyrangRule()
 end
 
 function A1mainthegg()
-    return has("a1thegg") and not has("gateTimeAttacks")
+    return (has("a1thegg") and not has("gateTimeAttacks"))
 end
 
 function A2mainthegg()
-    return has("a2thegg") and not has("gateTimeAttacks")
+    return (has("a2thegg") and not has("gateTimeAttacks"))
 end
 
 function A3mainthegg()

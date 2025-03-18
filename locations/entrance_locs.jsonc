@@ -601,8 +601,8 @@
         "map_locations": [
             {
                 "map": "map_entrance_cliffs",
-                "x": 720,
-                "y": 160
+                "x": 630,
+                "y": 80
             }
         ],
         "access_rules": [
