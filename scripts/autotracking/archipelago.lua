@@ -398,7 +398,6 @@ end
 --     end
 -- end
 
--- ScriptHost:AddWatchForCode("settings autofill handler", "autofill_settings", autoFill)s
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
