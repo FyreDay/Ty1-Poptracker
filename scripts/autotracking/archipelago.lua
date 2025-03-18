@@ -6,7 +6,6 @@ require("scripts/autotracking/level_mapping")
 require("scripts/autotracking/elemental_mapping")
 
 CUR_INDEX = -1
---SLOT_DATA = nil
 
 SLOT_DATA = {}
 PORTAL_MAP = {}
@@ -50,16 +49,10 @@ end
 
 function onClearHandler(slot_data)
 
-    if Archipelago.PlayerNumber > -1 then
-        CUR_STAGE = "ty1_level_"..Archipelago.TeamNumber.."_"..Archipelago:GetPlayerAlias(Archipelago.PlayerNumber)
-        
-        Archipelago:SetNotify({CUR_STAGE})
-        Archipelago:Get({CUR_STAGE})
-    end
-    -- print("data storage list", dump_table(data_storage_list))
+    
     local clear_timer = os.clock()
     
-    ScriptHost:RemoveWatchForCode("StateChange")
+    -- ScriptHost:RemoveWatchForCode("StateChange")
     -- Disable tracker updates.
     Tracker.BulkUpdate = true
     -- Use a protected call so that tracker updates always get enabled again, even if an error occurred.
@@ -70,8 +63,8 @@ function onClearHandler(slot_data)
         -- locations from AP have been processed.
         local handlerName = "AP onClearHandler"
         local function frameCallback()
-            ScriptHost:AddWatchForCode("StateChange", "*", StateChange)
-            ScriptHost:RemoveOnFrameHandler(handlerName)
+            -- ScriptHost:AddWatchForCode("StateChange", "*", StateChange)
+            -- ScriptHost:RemoveOnFrameHandler(handlerName)
             Tracker.BulkUpdate = false
             forceUpdate()
             print(string.format("Time taken total: %.2f", os.clock() - clear_timer))
@@ -85,9 +78,7 @@ function onClearHandler(slot_data)
 end
 
 function onClear(slot_data)
-    print(string.format("playernumber: %s TeamNumber: %s alias: %s", Archipelago.PlayerNumber,Archipelago.TeamNumber,Archipelago:GetPlayerAlias(Archipelago.PlayerNumber)))
 
-    --SLOT_DATA = slot_data
     CUR_INDEX = -1
     -- reset locations
     for _, location_array in pairs(LOCATION_MAPPING) do
@@ -128,6 +119,12 @@ function onClear(slot_data)
             end
         end
     end
+    
+    if slot_data == nil  then
+        print("welp")
+        return
+    end
+
     if slot_data['ProgressiveLevel'] then
         local deathlink = Tracker:FindObjectForCode("progressive_level_setting")
         deathlink.Active = (slot_data['ProgressiveLevel'])
@@ -218,18 +215,19 @@ function onClear(slot_data)
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
     SLOT_DATA = slot_data
-    
-    
 
-    -- if Tracker:FindObjectForCode("autofill_settings").Active == true then
-    --     autoFill(slot_data)
-    -- end
-    -- print(PLAYER_ID, TEAM_NUMBER)
     if Archipelago.PlayerNumber > -1 then
 
         HINTS_ID = "_read_hints_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({HINTS_ID})
         Archipelago:Get({HINTS_ID})
+    end
+
+    if Archipelago.PlayerNumber > -1 then
+        CUR_STAGE = "ty1_level_"..Archipelago.TeamNumber.."_"..Archipelago:GetPlayerAlias(Archipelago.PlayerNumber)
+        
+        Archipelago:SetNotify({CUR_STAGE})
+        Archipelago:Get({CUR_STAGE})
     end
 end
 
@@ -257,21 +255,21 @@ function onItem(index, item_id, item_name, player_number)
                 
             end
         elseif item_obj.Type == "progressive" then
-            -- print("progressive")
             item_obj.Active = true
+
         elseif item_obj.Type == "consumable" then
-            
-            -- print("consumable")
             item_obj.AcquiredCount = item_obj.AcquiredCount + item_obj.Increment * (tonumber(item[3]) or 1)
             if(item_code == "progressiverang") then
                 local nextrang = Tracker:FindObjectForCode(ELEMENTAL_MAPPING[item_obj.AcquiredCount][1])
                 nextrang.Active = true
             end
+
             if(item_code == "progressivelevel") then
                 
                 local nextportal = ProgressivePortalUpdated(item_obj, LEVEL_MAPPING, PORTAL_MAP)
                 nextportal.Active = true
             end
+
             local uls = Tracker:FindObjectForCode("levelunlockstyle")
             if((uls.CurrentStage == 0 or uls.CurrentStage == 2) and item_code == "firethunderegg") then
                 
@@ -280,6 +278,7 @@ function onItem(index, item_id, item_name, player_number)
                     boss.Active = true
                 end
             end
+
             if((uls.CurrentStage == 0 or uls.CurrentStage == 2) and item_code == "icethunderegg") then
                 
                 if item_obj.AcquiredCount >= Tracker:ProviderCountForCode("theggGating")then
@@ -287,6 +286,7 @@ function onItem(index, item_id, item_name, player_number)
                     boss.Active = true
                 end
             end
+
             if((uls.CurrentStage == 0 or uls.CurrentStage == 2) and item_code == "airthunderegg") then
                 
                 if item_obj.AcquiredCount >= Tracker:ProviderCountForCode("theggGating") then
@@ -294,8 +294,8 @@ function onItem(index, item_id, item_name, player_number)
                     boss.Active = true
                 end
             end
+
         elseif item_obj.Type == "progressive_toggle" then
-            -- print("progressive_toggle")
             if item_obj.Active then
                 item_obj.CurrentStage = item_obj.CurrentStage + 1
             else
@@ -315,7 +315,6 @@ function onLocation(location_id, location_name)
         print(string.format("onLocation: could not find location mapping for id %s", location_array[1]))
         return
     end
-    print(string.format("onLocation:  %s", dump_table(location_array)))
     local location = location_array[1]
     local counter = location_array[2]
 
@@ -372,42 +371,8 @@ function onEventsLaunch(key, value)
     updateEvents(value)
 end
 
--- this Autofill function is meant as an example on how to do the reading from slotdata and mapping the values to 
--- your own settings
--- function autoFill()
---     if SLOT_DATA == nil  then
---         print("its fucked")
---         return
---     end
---     -- print(dump_table(SLOT_DATA))
-
---     mapToggle={[0]=0,[1]=1,[2]=1,[3]=1,[4]=1}
---     mapToggleReverse={[0]=1,[1]=0,[2]=0,[3]=0,[4]=0}
---     mapTripleReverse={[0]=2,[1]=1,[2]=0}
-
---     slotCodes = {
---         map_name = {code="", mapping=mapToggle...}
---     }
---     -- print(dump_table(SLOT_DATA))
---     -- print(Tracker:FindObjectForCode("autofill_settings").Active)
---     if Tracker:FindObjectForCode("autofill_settings").Active == true then
---         for settings_name , settings_value in pairs(SLOT_DATA) do
---             -- print(k, v)
---             if slotCodes[settings_name] then
---                 item = Tracker:FindObjectForCode(slotCodes[settings_name].code)
---                 if item.Type == "toggle" then
---                     item.Active = slotCodes[settings_name].mapping[settings_value]
---                 else 
---                     -- print(k,v,Tracker:FindObjectForCode(slotCodes[k].code).CurrentStage, slotCodes[k].mapping[v])
---                     item.CurrentStage = slotCodes[settings_name].mapping[settings_value]
---                 end
---             end
---         end
---     end
--- end
-
 function onNotify(key, value, old_value)
-    print("onNotify", key, value, old_value)
+    -- print("onNotify", key, value, old_value)
     if value ~= old_value and key == HINTS_ID then
         for _, hint in ipairs(value) do
             if hint.finding_player == Archipelago.PlayerNumber then
@@ -419,13 +384,8 @@ function onNotify(key, value, old_value)
             end
         end
     end
-
-    -- print("got  " .. key .. " = " .. tostring(value) .. " (was " .. tostring(old) .. ")")
-    -- print(dump_table(LEVEL_MAPPING[tostring(value)]))
     if key == CUR_STAGE and has("automap_on")  then
-        print(dump_table(LEVEL_MAPPING[value]))
         local tab = LEVEL_MAPPING[value][3]
-        print(tab)
         Tracker:UiHint("ActivateTab", tab)
     end
 end
@@ -447,9 +407,7 @@ function onNotifyLaunch(key, value)
     end
 
     if key == CUR_STAGE and has("automap_on") then
-        print(dump_table(LEVEL_MAPPING[value]))
         local tab = LEVEL_MAPPING[value][3]
-        print(tab)
         Tracker:UiHint("ActivateTab", tab)
     end
 end
@@ -473,15 +431,8 @@ function updateHints(locationID, clear)
     end
 end
 
--- wishful thinking
-function onMapChange(key, value, old)
-    -- print("got  " .. key .. " = " .. tostring(value) .. " (was " .. tostring(old) .. ")")
-    -- print(dump_table(MAP_MAPPING[tostring(value)]))
-    
-end
-
 -- ScriptHost:AddWatchForCode("settings autofill handler", "autofill_settings", autoFill)s
-Archipelago:AddClearHandler("clear handler", onClearHandler)
+Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
 

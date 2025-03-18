@@ -159,24 +159,19 @@ end
 entry_point = ty_the_tasmanian_tiger_location.new("entry_point")
 
 -- 
-function stateChanged()
-    staleness = staleness + 1
-    entry_point:discover(AccessibilityLevel.Normal, 0)
-end
+-- function stateChanged()
+--     staleness = staleness + 1
+--     entry_point:discover(AccessibilityLevel.Normal, 0)
+-- end
 
 function frameInfraRule()
     if not has("frames_require_infra") then
-        if has("frames_per_level") then
-            return AccessibilityLevel.Inspect
-        end
         return AccessibilityLevel.Normal
     end
     if not has("infrarang") then
-        if has("frames_per_level") then
-            return AccessibilityLevel.Inspect
-        end
         return AccessibilityLevel.SequenceBreak
     end
+    
     return AccessibilityLevel.Normal
 end
 
@@ -319,5 +314,5 @@ function toggleDisplayPortal(item_code, LEVEL_MAPPING)
     end
 end
 
-ScriptHost:AddWatchForCode("stateChanged", "*", stateChanged)
+-- ScriptHost:AddWatchForCode("stateChanged", "*", stateChanged)
         
