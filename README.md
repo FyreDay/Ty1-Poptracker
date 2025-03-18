@@ -7,5 +7,4 @@ Poptracker for Ty the Tasmanian Tiger Archipelago tracker pack for [PopTracker](
 - Copy the tracker zip file inside the 'packs' folder of PopTracker
 
 # Known Issues
-- Elemental checks are Incorrect
-- Small map size
+- All Frames, One check yaml setting causes frames to display incorrectly
