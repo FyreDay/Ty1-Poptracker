@@ -1,6 +1,15 @@
 {
     "versions": [
         {
+            "package_version": "1.0.5",
+            "download_url": "https://github.com/FyreDay/Ty1-Poptracker/releases/download/v1.0.5/Ty1-Poptracker-v1.0.5.zip",
+            "sha256": "70c96d648325561145fa1b6298f213371f81ae732ff29f0a82c92ecfd8e7734c",
+            "changelog": [
+                "Changed version to 1.0.5",
+                "Added Opal Sanity"
+            ]
+        },
+        {
             "package_version": "1.0.4",
             "download_url": "https://github.com/FyreDay/Ty1-Poptracker/releases/download/v1.0.4/Ty1-Poptracker-v1.0.4.zip",
             "sha256": "fcbc6a3105872939056131cd68e29f9f6254f9d53e53f18fab24ffb109654288",
