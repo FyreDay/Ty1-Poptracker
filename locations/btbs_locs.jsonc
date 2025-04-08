@@ -218,6 +218,15 @@
         "item_count": 1,
         "chest_unopened_img": "images/items/pictureframe.png",
         "chest_opened_img": "images/items/pictureframe_grey.png"
+      },
+      {
+        "visibility_rules": [
+            "Opalsanity"
+        ],
+        "name": "Opals",
+        "item_count": 64,
+        "chest_unopened_img": "images/items/OpalC.png",
+        "chest_opened_img": "images/items/Opal_grey.png"
       }
     ],
     "children": [
@@ -425,6 +434,15 @@
             "item_count": 1,
             "chest_unopened_img": "images/items/pictureframe.png",
             "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "visibility_rules": [
+                "Opalsanity"
+            ],
+            "name": "Opals",
+            "item_count": 214,
+            "chest_unopened_img": "images/items/OpalC.png",
+            "chest_opened_img": "images/items/Opal_grey.png"
           }
         ]
       },
@@ -660,6 +678,15 @@
             "item_count": 1,
             "chest_unopened_img": "images/items/pictureframe.png",
             "chest_opened_img": "images/items/pictureframe_grey.png"
+          },
+          {
+            "visibility_rules": [
+                "Opalsanity"
+            ],
+            "name": "Opals",
+            "item_count": 22,
+            "chest_unopened_img": "images/items/OpalC.png",
+            "chest_opened_img": "images/items/Opal_grey.png"
           }
         ]
       }

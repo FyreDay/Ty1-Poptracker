@@ -30,6 +30,12 @@
         "codes": "sign_sanity"
     },
     {
+        "name": "Opalsanity",
+        "type": "toggle",
+        "img": "images/items/OpalA.png",
+        "codes": "Opalsanity"
+      },
+    {
         "name": "Deathlink",
         "type": "toggle",
         "img": "images/settings/deathlink.png",

@@ -64,5 +64,6 @@ ITEM_MAPPING = {
 	[141885585] = {"slowtrap", "consumable"},
 	[141885586] = {"gravitytrap", "consumable"},
 	[141885587] = {"acidtrap", "consumable"},
-	[141885588] = {"exittrap", "consumable"}
+	[0x8750084] = {"Quarter Pie", "consumable"},
+	[0x8750085] = {"Full Pie", "consumable"},
 }

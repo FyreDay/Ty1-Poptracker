@@ -75,6 +75,27 @@
             "item_count": 1,
             "chest_unopened_img": "images/items/stopwatch.png",
             "chest_opened_img": "images/items/stopwatch_grey.png"
+          },
+          {
+            "visibility_rules": [
+                "Opalsanity"
+            ],
+            "name": "Opals",
+            "item_count": 255,
+            "chest_unopened_img": "images/items/OpalC.png",
+            "chest_opened_img": "images/items/Opal_grey.png"
+          },
+          {
+            "visibility_rules": [
+                "Opalsanity"
+            ],
+            "access_rules": [
+              "swim","dive"
+            ],
+            "name": "Underwater-Opals",
+            "item_count": 45,
+            "chest_unopened_img": "images/items/OpalC.png",
+            "chest_opened_img": "images/items/Opal_grey.png"
           }
         ]
       },

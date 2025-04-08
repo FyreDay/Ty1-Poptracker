@@ -124,6 +124,11 @@ function onClear(slot_data)
         framesanity.CurrentStage = (slot_data['Framesanity'])
     end
 
+    if slot_data['Opalsanity'] then
+        local Opalsanity = Tracker:FindObjectForCode("Opalsanity")
+        Opalsanity.Active = (slot_data['Opalsanity'])
+    end
+
     if slot_data['FramesRequireInfra'] then
         local frameinfra = Tracker:FindObjectForCode("frames_require_infra")
         frameinfra.Active = (slot_data['FramesRequireInfra'])
@@ -277,8 +282,16 @@ end
 function onLocation(location_id, location_name)
     local location_array = LOCATION_MAPPING[location_id]
     if not location_array or not location_array[1] then
-        print(string.format("onLocation: could not find location mapping for id %s", location_array[1]))
-        return
+        if(SMALLEST_OPAL_ID <= location_id and location_id <= LARGEST_OPAL_ID) then
+            print("opal key is")
+            print(location_id)
+            location_array = {get_label_for_hex(location_id, OPAL_MAPPING)}
+            print("opal location is")
+            print(location_array[1])
+        else
+            print(string.format("onLocation: could not find location mapping for id %s", location_array[1]))
+            return
+        end
     end
     local location = location_array[1]
     local counter = location_array[2]
@@ -337,20 +350,7 @@ function onEventsLaunch(key, value)
 end
 
 function onNotify(key, value, old_value)
-    print("onNotify", key, value, old_value)
-    -- if value ~= old_value and key == HINTS_ID then
-    --     for _, hint in ipairs(value) do
-    --         print("hint", hint, hint.found)
-    --         print(dump_table(hint))
-    --         if hint.finding_player == Archipelago.PlayerNumber then
-    --             if hint.found then
-    --                 updateHints(hint.location, true)
-    --             else
-    --                 updateHints(hint.location, false)
-    --             end
-    --         end
-    --     end
-    -- end
+    --print("onNotify", key, value, old_value)
     if key == CUR_STAGE and has("automap_on")  then
         local tab = LEVEL_MAPPING[value][3]
         Tracker:UiHint("ActivateTab", tab)
@@ -358,45 +358,13 @@ function onNotify(key, value, old_value)
 end
 
 function onNotifyLaunch(key, value)
-    print("onNotifyLaunch", key, value)
-    -- if key == HINTS_ID then
-    --     for _, hint in ipairs(value) do
-    --         print("hint", hint, hint.found)
-    --         print(dump_table(hint))
-    --         if hint.finding_player == Archipelago.PlayerNumber then
-    --             if hint.found then
-    --                 updateHints(hint.location, true)
-    --             else
-    --                 updateHints(hint.location, false)
-    --             end
-    --         end
-    --     end
-    -- end
+    --print("onNotifyLaunch", key, value)
 
     if key == CUR_STAGE and has("automap_on") then
         local tab = LEVEL_MAPPING[value][3]
         Tracker:UiHint("ActivateTab", tab)
     end
 end
-
--- function updateHints(locationID, clear)
---     local item_codes = HINTS_MAPPING[locationID]
-    
---     for _, item_table in ipairs(item_codes, clear) do
---         for _, item_code in ipairs(item_table) do
---             local obj = Tracker:FindObjectForCode(item_code)
---             if obj then
---                 if not clear then
---                     obj.Active = true
---                 else
---                     obj.Active = false
---                 end
---             else
---                 print(string.format("No object found for code: %s", item_code))
---             end
---         end
---     end
--- end
 
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
@@ -407,7 +375,7 @@ Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
 
 --doc
 --hint layout
--- {
+-- 
 --     ["receiving_player"] = 1,
 --     ["class"] = Hint,
 --     ["finding_player"] = 1,
@@ -416,4 +384,4 @@ Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
 --     ["item_flags"] = 2,
 --     ["entrance"] = ,
 --     ["item"] = 66062,
--- } 
+-- 

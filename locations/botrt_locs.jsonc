@@ -159,6 +159,28 @@
         "item_count": 1,
         "chest_unopened_img": "images/items/thunderegg.png",
         "chest_opened_img": "images/items/thunderegg_grey.png"
+      },
+      {
+        "visibility_rules": [
+            "Opalsanity"
+        ],
+        "name": "Opals",
+        "item_count": 95,
+        "chest_unopened_img": "images/items/OpalB.png",
+        "chest_opened_img": "images/items/Opal_grey.png"
+      },
+      {
+        "visibility_rules": [
+            "Opalsanity"
+        ],
+        "access_rules": [
+          "swim",
+          "dive"
+        ],
+        "name": "Underwater-Opals",
+        "item_count": 15,
+        "chest_unopened_img": "images/items/OpalB.png",
+        "chest_opened_img": "images/items/Opal_grey.png"
       }
     ],
     "children": [
@@ -364,6 +386,28 @@
             "item_count": 1,
             "chest_unopened_img": "images/items/thunderegg.png",
             "chest_opened_img": "images/items/thunderegg_grey.png"
+          },
+          {
+            "visibility_rules": [
+                "Opalsanity"
+            ],
+            "name": "Opals",
+            "item_count": 175,
+            "chest_unopened_img": "images/items/OpalB.png",
+            "chest_opened_img": "images/items/Opal_grey.png"
+          },
+          {
+            "visibility_rules": [
+                "Opalsanity"
+            ],
+            "access_rules": [
+              "swim",
+              "dive"
+            ],
+            "name": "Underwater-Opals",
+            "item_count": 15,
+            "chest_unopened_img": "images/items/OpalB.png",
+            "chest_opened_img": "images/items/Opal_grey.png"
           }
         ]
       },
