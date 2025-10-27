@@ -204,11 +204,11 @@ function flamerangRule()
 end
 
 function frostyrangRule()
-    return Tracker:ProviderCountForCode("icetheggchecks") >= Tracker:ProviderCountForCode("theggGating") and has("platypustalisman")
+    return Tracker:ProviderCountForCode("icetheggchecks") >= Tracker:ProviderCountForCode("theggGating") and has("platypustalisman") and flamerangRule()
 end
 
 function zappyrangRule()
-    return Tracker:ProviderCountForCode("airtheggchecks") >= Tracker:ProviderCountForCode("theggGating") and has("cockatootalisman")
+    return Tracker:ProviderCountForCode("airtheggchecks") >= Tracker:ProviderCountForCode("theggGating") and has("cockatootalisman") and frostyrangRule()
 end
 
 function A1mainthegg()
@@ -314,5 +314,44 @@ function toggleDisplayPortal(item_code, LEVEL_MAPPING)
     end
 end
 
+
+function hasAccessToIndex(portalnum, portalname)
+    local index = tonumber(portalnum)
+     for i = 1, 9 do
+        local portal = Tracker:FindObjectForCode("portal"..i)
+        if portal.CurrentStage == index then
+            if not has(portalname) then
+                return AccessibilityLevel.None
+            end
+            print("found portal index "..tostring(index).."at portal "..i)
+            if i > 1 and i < 4 then
+                print("Do I have second rang? "..tostring(has("secondrang")))
+                if has("secondrang") then
+                    return AccessibilityLevel.Normal
+                else
+                    return AccessibilityLevel.SequenceBreak
+                end
+            end
+
+            if i > 3 and i < 7 then
+                if has("flamerang") then
+                    return AccessibilityLevel.Normal
+                elseif has("dive") and not has("flamerang") then
+                    return AccessibilityLevel.SequenceBreak
+                end
+            end
+            
+            if i > 6 then
+                if has("frostyrang") then
+                    return AccessibilityLevel.Normal
+                elseif has("dive") and not has("frostyrang") then
+                    return AccessibilityLevel.SequenceBreak
+                end
+            end
+            return AccessibilityLevel.None
+        end
+    end
+    return AccessibilityLevel.None
+end
 -- ScriptHost:AddWatchForCode("stateChanged", "*", stateChanged)
         

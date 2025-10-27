@@ -2,7 +2,7 @@
   {
     "name": "Outback Safari",
     "access_rules": [
-      "portal-outbacksafari"
+      "^$hasAccessToIndex|5|portal-outbacksafari"
     ],
     "map_locations": [
       {

@@ -2,7 +2,7 @@
   {
     "name": "Snow Worries",
     "access_rules": [
-      "portal-snowworries"
+      "^$hasAccessToIndex|4|portal-snowworries"
     ],
     "map_locations": [
       {

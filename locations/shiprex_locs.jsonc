@@ -2,7 +2,7 @@
     {
         "name": "Ship Rex",
         "access_rules": [
-            "portal-shiprex"
+            "^$hasAccessToIndex|2|portal-shiprex"
         ],
         "map_locations": [
             {

@@ -2,7 +2,7 @@
     {
         "name": "WitP",
         "access_rules": [
-            "portal-walkinthepark"
+            "^$hasAccessToIndex|1|portal-walkinthepark"
         ],
         "map_locations": [
             {

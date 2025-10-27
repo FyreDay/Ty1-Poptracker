@@ -2,7 +2,7 @@
     {
         "name": "Two Up",
         "access_rules": [
-            "portal-twoup"
+            "^$hasAccessToIndex|0|portal-twoup"
         ],
         "children": [
             {

@@ -2,7 +2,7 @@
   {
     "name": "RMtS",
     "access_rules": [
-      "portal-rexmarksthespot"
+      "^$hasAccessToIndex|8|portal-rexmarksthespot"
     ],
     "map_locations": [
       {

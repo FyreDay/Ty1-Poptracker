@@ -1,5 +1,14 @@
 {
     "versions": [
+         {
+            "package_version": "1.0.7",
+            "download_url": "https://github.com/FyreDay/Ty1-Poptracker/releases/download/v1.0.7/Ty1-Poptracker-v1.0.7.zip",
+            "sha256": "df81d3f2251c8a1bc4deedd6146e2a523d5e04ab463baff15de11afa75df4907",
+            "changelog": [
+                "Added Improved logic for entrances",
+                "Added levels respecting the entrances tab logic"
+            ]
+        },
         {
             "package_version": "1.0.5",
             "download_url": "https://github.com/FyreDay/Ty1-Poptracker/releases/download/v1.0.5/Ty1-Poptracker-v1.0.5.zip",

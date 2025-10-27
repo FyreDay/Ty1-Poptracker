@@ -2,7 +2,7 @@
   {
     "name": "BtBS",
     "access_rules": [
-      "portal-beyondtheblackstump"
+      "^$hasAccessToIndex|7|portal-beyondtheblackstump"
     ],
     "map_locations": [
       {

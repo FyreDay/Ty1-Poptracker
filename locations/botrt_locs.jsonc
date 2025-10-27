@@ -2,7 +2,7 @@
   {
     "name": "BotRT",
     "access_rules": [
-      "portal-bridgeontheriverty"
+      "^$hasAccessToIndex|3|portal-bridgeontheriverty"
     ],
     "map_locations": [
       {

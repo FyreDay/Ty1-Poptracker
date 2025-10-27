@@ -2,7 +2,7 @@
   {
     "name": "LLPoF",
     "access_rules": [
-      "portal-lyrelyrepantsonfire"
+      "^$hasAccessToIndex|6|portal-lyrelyrepantsonfire"
     ],
     "map_locations": [
       {
