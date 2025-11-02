@@ -348,7 +348,7 @@ function hasAccessToIndex(portalnum, portalname)
                     return AccessibilityLevel.SequenceBreak
                 end
             end
-            return AccessibilityLevel.None
+            return AccessibilityLevel.Normal
         end
     end
     return AccessibilityLevel.None
